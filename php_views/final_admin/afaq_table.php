@@ -5,7 +5,7 @@ $active="active";
 
 
 // Include the header
-include('../asset_for_pages/header.php');
+include('../asset_for_pages/admin_header.php');
 
 // Sample data for the FAQ (in a real application, this data would come from a database)
 $faqData = [

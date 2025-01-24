@@ -3,7 +3,7 @@
 $pageTitle = "O - FAQ Add"; 
 
 // Include the header
-include('../asset_for_pages/header_owner.php');
+include('../asset_for_pages/owner_header.php');
 
 // Sample FAQ data for demo purposes (this would come from your database in a real application)
 $faq = [

@@ -66,9 +66,10 @@
         <div class="sidebar-content">
           <ul class="nav nav-secondary">
             <li class="nav-item">
-              <a data-bs-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
+              <a data-bs-toggle="collapse"  class="collapsed" aria-expanded="false">
+                <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_owner/odashboard.php" >
                 <i class="fas fa-home"></i>
-                <p>Home Page</p>
+                <p>Dashboard</p>
               </a>
             </li>
             <li class="nav-section">
@@ -78,39 +79,59 @@
             </li>
             <li class="nav-item">
               <a data-bs-toggle="collapse">
-              <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/user/user_profile.php">
+              <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_owner/add_user.php">
                 <i class="fas fa-layer-group"></i>
-                <p>Profile</p>
+                <p>Add User</p>
               </a>
             </li>
 
-
             <li class="nav-item">
               <a data-bs-toggle="collapse">
-                <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/user/post.php">
+                <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_owner/ofaq_table.php">
                 <i class="fas fa-pen-square"></i>
-                <p>Blog Post</p>
+                <p>FAQs Page</p>
 
               </a>
+            </li>
 
             <li class="nav-item  active submenu">
               <a data-bs-toggle="collapse">
-              <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/user/faqpage.php">
+              <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_owner/ofaq_add_form.php">
                 <i class="fas fa-table"></i>
-                <p>FAQs</p>
-
+                <p>Add FAQs</p>
               </a>
+            </li>
 
+            <li class="nav-item  active submenu">
+              <a data-bs-toggle="collapse">
+              <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_owner/ofeaturetoggle.php">
+                <i class="fas fa-table"></i>
+                <p>Feature Toggle</p>
+              </a>
             </li>
 
             <li class="nav-item">
               <a data-bs-toggle="collapse">
-              <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/user/instructionspage.php">
-                <i class="far fa-chart-bar"></i>
-                <p>Instructions</p>
-
+                <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_owner/oreport.php">
+                <i class="fas fa-pen-square"></i>
+                <p>Reports</p>
               </a>
+            </li>
+            
+            <li class="nav-item">
+              <a data-bs-toggle="collapse">
+              <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_owner/post.php">
+                <i class="far fa-chart-bar"></i>
+                <p>Broadcast</p>
+              </a>
+            </li>
 
+            <li class="nav-item">
+              <a data-bs-toggle="collapse">
+              <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_owner/user-info-and-edit.php">
+                <i class="far fa-chart-bar"></i>
+                <p>Users Add/Edit</p>
+              </a>
             </li>
 
             <!-- <li class="nav-item">
@@ -257,12 +278,12 @@
                             <img src="../../assets/img/jm_denis.jpg" alt="Img Profile" />
                           </div>
                           <div class="notif-content">
-                            <span class="subject">Jimmy Denis</span>
-                            <span class="block"> How are you ? </span>
+                            <span class="subject">Louis Rai</span>
+                            <span class="block"> What's the update ? </span>
                             <span class="time">5 minutes ago</span>
                           </div>
                         </a>
-                        <a href="#">
+                        <!-- <a href="#">
                           <div class="notif-img">
                             <img src="../../assets/img/chadengle.jpg" alt="Img Profile" />
                           </div>
@@ -293,7 +314,7 @@
                             <span class="block"> Hi, Apa Kabar ? </span>
                             <span class="time">17 minutes ago</span>
                           </div>
-                        </a>
+                        </a> -->
                       </div>
                     </div>
                   </li>
@@ -307,12 +328,12 @@
                 <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button" data-bs-toggle="dropdown"
                   aria-haspopup="true" aria-expanded="false">
                   <i class="fa fa-bell"></i>
-                  <span class="notification">4</span>
+                  <span class="notification">3</span>
                 </a>
                 <ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="notifDropdown">
                   <li>
                     <div class="dropdown-title">
-                      You have 4 new notification
+                      You have 3 new notification
                     </div>
                   </li>
                   <li>
@@ -333,23 +354,23 @@
                           </div>
                           <div class="notif-content">
                             <span class="block">
-                              Rahmad commented on Admin
+                              Chinmay posted a broadcast message on User.
                             </span>
                             <span class="time">12 minutes ago</span>
                           </div>
                         </a>
                         <a href="#">
-                          <div class="notif-img">
-                            <img src="../../assets/img/profile2.jpg" alt="Img Profile" />
+                          <div class="notif-icon notif-success">
+                            <i class="fa fa-comment"></i>
                           </div>
                           <div class="notif-content">
                             <span class="block">
-                              Reza send messages to you
+                              Aniket posted a broadcast message on User.
                             </span>
                             <span class="time">12 minutes ago</span>
                           </div>
                         </a>
-                        <a href="#">
+                        <!-- <a href="#">
                           <div class="notif-icon notif-danger">
                             <i class="fa fa-heart"></i>
                           </div>
@@ -357,7 +378,7 @@
                             <span class="block"> Farrah liked Admin </span>
                             <span class="time">17 minutes ago</span>
                           </div>
-                        </a>
+                        </a> -->
                       </div>
                     </div>
                   </li>
@@ -440,7 +461,7 @@
                   </div>
                   <span class="profile-username">
                     <span class="op-7">Hi,</span>
-                    <span class="fw-bold">Hizrian</span>
+                    <span class="fw-bold">Sudeep</span>
                   </span>
                 </a>
                 <ul class="dropdown-menu dropdown-user animated fadeIn">
@@ -451,8 +472,8 @@
                           <img src="../../assets/img/profile.jpg" alt="image profile" class="avatar-img rounded" />
                         </div>
                         <div class="u-text">
-                          <h4>Hizrian</h4>
-                          <p class="text-muted">hello@example.com</p>
+                          <h4>Sudeep</h4>
+                          <p class="text-muted">sudeep@yahoo.com</p>
                           <a href="profile.html" class="btn btn-xs btn-secondary btn-sm">View Profile</a>
                         </div>
                       </div>
@@ -460,7 +481,7 @@
                     <li>
                       <div class="dropdown-divider"></div>
                       <a class="dropdown-item" href="#">My Profile</a>
-                      <a class="dropdown-item" href="#">My Balance</a>
+                      <!-- <a class="dropdown-item" href="#">My Balance</a> -->
                       <a class="dropdown-item" href="#">Inbox</a>
                       <div class="dropdown-divider"></div>
                       <a class="dropdown-item" href="#">Account Setting</a>

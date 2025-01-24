@@ -4,7 +4,7 @@ $pageTitle = "A - Edit User";
 $active="active";
 
 // Include the header
-include('../asset_for_pages/header.php');
+include('../asset_for_pages/admin_header.php');
 
 // Generate random data for demonstration purposes
 $randomUsername = 'user_' . rand(1000, 9999);

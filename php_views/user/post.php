@@ -3,7 +3,7 @@
 $pageTitle = "Broadcast Message - CyberCafe"; 
 
 // Include the header
-include('../asset_for_pages/header_user.php');
+include('../asset_for_pages/user_header.php');
 ?>
 
 <div class="container">

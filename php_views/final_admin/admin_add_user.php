@@ -5,7 +5,7 @@ $pageTitle = "A - Add User";
 
 
 // Include the header
-include('../asset_for_pages/header.php');
+include('../asset_for_pages/admin_header.php');
 ?>
 
 <div class="page-header">
