@@ -76,16 +76,17 @@
                 <i class="fa fa-ellipsis-h"></i>
               </span>
             </li>
-            <li class="nav-item">
+
+            <!-- <li class="nav-item">
               <a data-bs-toggle="collapse">
               <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_admin/admin_add_user.php">
                 <i class="fas fa-layer-group"></i>
                 <p>Add User</p>
               </a>
-            </li>
+            </li> -->
 
 
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a data-bs-toggle="collapse">
                 <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_admin/afaq_table.php">
                 <i class="fas fa-pen-square"></i>
@@ -93,24 +94,44 @@
 
               </a>
 
-            <li class="nav-item  active submenu">
+            <li class="nav-item">
               <a data-bs-toggle="collapse">
               <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_admin/afaq_add_form.php">
                 <i class="fas fa-table"></i>
                 <p>Add FAQs</p>
-
               </a>
-
-            </li>
+            </li> -->
 
             <li class="nav-item">
+              <a data-bs-toggle="collapse" href="#charts">
+                <i class="far fa-chart-bar"></i>
+                <p>FAQs Management</p>
+                <span class="caret"></span>
+              </a>
+              <div class="collapse" id="charts">
+                <ul class="nav nav-collapse">
+                  <li>
+                    <a href="http://localhost/CCFBackup/php_views/final_admin/afaq_table.php">
+                      <i class="fas fa-pen-square"></i>
+                      <p>FAQs Page</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://localhost/CCFBackup/php_views/final_admin/afaq_add_form.php">
+                      <i class="fas fa-table"></i>
+                      <p>Add FAQs</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- <li class="nav-item">
               <a data-bs-toggle="collapse">
               <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_admin/auser_table.php">
                 <i class="far fa-chart-bar"></i>
                 <p>Users Information</p>
-
               </a>
-
             </li>
 
             <li class="nav-item">
@@ -118,78 +139,38 @@
               <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_admin/auser_info_add_and_edit.php">
                 <i class="far fa-chart-bar"></i>
                 <p>Users Add/Edit</p>
-
               </a>
-
-            </li>
-
-            <!-- <li class="nav-item">
-              <a href="">
-                <i class="fas fa-desktop"></i>
-                <p>Devices Connected</p>
-                <span class="badge badge-success">4</span>
-              </a>
-            </li>
+            </li> -->
 
             <li class="nav-item">
-              <a href="">
-                <i class="fas fa-file"></i>
-                <p>Any Documentation</p>
-                <span class="badge badge-secondary">1</span>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a data-bs-toggle="collapse" href="#submenu">
-                <i class="fas fa-bars"></i>
-                <p>Extra if needed</p>
+              <a data-bs-toggle="collapse" href="#charts">
+                <i class="far fa-chart-bar"></i>
+                <p>User Management</p>
                 <span class="caret"></span>
               </a>
-              <div class="collapse" id="submenu">
+              <div class="collapse" id="charts">
                 <ul class="nav nav-collapse">
                   <li>
-                    <a data-bs-toggle="collapse" href="#subnav1">
-                      <span class="sub-item">Level 1</span>
-                      <span class="caret"></span>
+                    <a href="http://localhost/CCFBackup/php_views/final_admin/auser_table.php">
+                      <i class="far fa-chart-bar"></i>
+                      <p>Users Information</p>
                     </a>
-                    <div class="collapse" id="subnav1">
-                      <ul class="nav nav-collapse subnav">
-                        <li>
-                          <a href="#">
-                            <span class="sub-item">Level 2</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <span class="sub-item">Level 2</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
                   </li>
                   <li>
-                    <a data-bs-toggle="collapse" href="#subnav2">
-                      <span class="sub-item">Level 1</span>
-                      <span class="caret"></span>
+                    <a href="http://localhost/CCFBackup/php_views/final_admin/admin_add_user.php">
+                      <i class="fas fa-layer-group"></i>
+                      <p>Add User</p>
                     </a>
-                    <div class="collapse" id="subnav2">
-                      <ul class="nav nav-collapse subnav">
-                        <li>
-                          <a href="#">
-                            <span class="sub-item">Level 2</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
                   </li>
                   <li>
-                    <a href="#">
-                      <span class="sub-item">Level 1</span>
+                    <a href="http://localhost/CCFBackup/php_views/final_admin/auser_info_add_and_edit.php">
+                      <i class="far fa-chart-bar"></i>
+                      <p>Users Add/Edit</p>
                     </a>
                   </li>
                 </ul>
               </div>
-            </li> -->
+            </li>
 
           </ul>
         </div>

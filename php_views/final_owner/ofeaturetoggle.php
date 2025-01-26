@@ -108,7 +108,7 @@ $users = [
                 <input type="number" class="form-control" id="dataSharingValue" min="10" max="100" value="<?php echo $dataSharingPercentage; ?>" oninput="updateSliderValue(this.value)" style="width: 30%; margin-left: 10px;" />
                 
                 <!-- Percentage sign takes 10% width -->
-                <span style="margin-left: 5px; font-size: 16px;">%</span>
+                <span style="margin-left: 5px; font-size: 16px;">% of 200 GB</span>
               </div>
             </div>
 

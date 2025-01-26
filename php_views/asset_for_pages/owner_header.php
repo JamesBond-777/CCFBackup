@@ -67,7 +67,7 @@
           <ul class="nav nav-secondary">
             <li class="nav-item">
               <a data-bs-toggle="collapse"  class="collapsed" aria-expanded="false">
-                <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_owner/odashboard.php" >
+                <a href="http://localhost/CCFBackup/php_views/final_owner/odashboard.php" >
                 <i class="fas fa-home"></i>
                 <p>Dashboard</p>
               </a>
@@ -77,34 +77,71 @@
                 <i class="fa fa-ellipsis-h"></i>
               </span>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a data-bs-toggle="collapse">
-              <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_owner/add_user.php">
+              <a href="http://localhost/CCFBackup/php_views/final_owner/add_user.php">
                 <i class="fas fa-layer-group"></i>
                 <p>Add User</p>
               </a>
+            </li> -->
+
+            <li class="nav-item">
+              <a data-bs-toggle="collapse" href="#charts">
+                <i class="far fa-chart-bar"></i>
+                <p>User Management</p>
+                <span class="caret"></span>
+              </a>
+              <div class="collapse" id="charts">
+                <ul class="nav nav-collapse">
+                  <li>
+                    <a href="http://localhost/CCFBackup/php_views/final_admin/auser_table.php">
+                      <i class="far fa-chart-bar"></i>
+                      <p>Users Information</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://localhost/CCFBackup/php_views/final_owner/add_user.php">
+                      <i class="fas fa-layer-group"></i>
+                      <p>Add User</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://localhost/CCFBackup/php_views/final_owner/user-info-and-edit.php">
+                      <i class="far fa-chart-bar"></i>
+                      <p>Users Add/Edit</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
 
             <li class="nav-item">
-              <a data-bs-toggle="collapse">
-                <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_owner/ofaq_table.php">
-                <i class="fas fa-pen-square"></i>
-                <p>FAQs Page</p>
-
+              <a data-bs-toggle="collapse" href="#charts">
+                <i class="far fa-chart-bar"></i>
+                <p>FAQs Management</p>
+                <span class="caret"></span>
               </a>
+              <div class="collapse" id="charts">
+                <ul class="nav nav-collapse">
+                  <li>
+                    <a href="http://localhost/CCFBackup/php_views/final_admin/afaq_table.php">
+                      <i class="fas fa-pen-square"></i>
+                      <p>FAQs Page</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://localhost/CCFBackup/php_views/final_admin/afaq_add_form.php">
+                      <i class="fas fa-table"></i>
+                      <p>Add FAQs</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
 
             <li class="nav-item  active submenu">
               <a data-bs-toggle="collapse">
-              <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_owner/ofaq_add_form.php">
-                <i class="fas fa-table"></i>
-                <p>Add FAQs</p>
-              </a>
-            </li>
-
-            <li class="nav-item  active submenu">
-              <a data-bs-toggle="collapse">
-              <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_owner/ofeaturetoggle.php">
+              <a href="http://localhost/CCFBackup/php_views/final_owner/ofeaturetoggle.php">
                 <i class="fas fa-table"></i>
                 <p>Feature Toggle</p>
               </a>
@@ -112,7 +149,7 @@
 
             <li class="nav-item">
               <a data-bs-toggle="collapse">
-                <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_owner/oreport.php">
+                <a href="http://localhost/CCFBackup/php_views/final_owner/oreport.php">
                 <i class="fas fa-pen-square"></i>
                 <p>Reports</p>
               </a>
@@ -120,19 +157,19 @@
             
             <li class="nav-item">
               <a data-bs-toggle="collapse">
-              <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_owner/post.php">
+              <a href="http://localhost/CCFBackup/php_views/final_owner/post.php">
                 <i class="far fa-chart-bar"></i>
                 <p>Broadcast</p>
               </a>
             </li>
 
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a data-bs-toggle="collapse">
-              <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_owner/user-info-and-edit.php">
+              <a href="http://localhost/CCFBackup/php_views/final_owner/user-info-and-edit.php">
                 <i class="far fa-chart-bar"></i>
                 <p>Users Add/Edit</p>
               </a>
-            </li>
+            </li> -->
 
             <!-- <li class="nav-item">
               <a href="">

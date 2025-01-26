@@ -1,7 +1,7 @@
 <?php
 // Set the page title dynamically
 $pageTitle = "A - FAQ Add";
-$active="active"; 
+
 
 
 // Include the header

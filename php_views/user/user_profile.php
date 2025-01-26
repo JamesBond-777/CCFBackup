@@ -82,7 +82,7 @@ include('../asset_for_pages/user_header.php');
                                     <tr>
                                         <th>SN.</th>
                                         <th>Devices</th>
-                                        <th>MAC Address</th>
+                                        <!-- <th>MAC Address</th> -->
                                         <th>Bandwidth Allocated</th>
                                         
                                         <!-- <th>Edit</th> -->
@@ -92,28 +92,28 @@ include('../asset_for_pages/user_header.php');
                                     <tr>
                                         <td>1.</td>
                                         <td>Desktop</td>
-                                        <td>00:11:22:33:44:55</td>
+                                        <!-- <td>00:11:22:33:44:55</td> -->
                                         <td>1 GB</td>
                                         <!-- <td><a href="#" class="edit-btn">Edit</a></td> -->
                                     </tr>
                                     <tr>
                                         <td>2.</td>
                                         <td>Smartphone</td>
-                                        <td>66:77:88:99:12:07</td>
+                                        <!-- <td>66:77:88:99:12:07</td> -->
                                         <td>50 MB</td>
                                         <!-- <td><a href="#" class="edit-btn">Edit</a></td> -->
                                     </tr>
                                     <tr>
                                       <td>3.</td>
                                       <td>Laptop</td>
-                                      <td>00:11:22:33:55:77</td>
+                                      <!-- <td>00:11:22:33:55:77</td> -->
                                       <td>10 GB</td>
                                       <!-- <td><a href="#" class="edit-btn">Edit</a></td> -->
                                   </tr>
                                   <tr>
                                     <td>4.</td>
                                     <td>Tablet</td>
-                                    <td>00:11:22:33:55:88</td>
+                                    <!-- <td>00:11:22:33:55:88</td> -->
                                     <td>100 MB</td>
                                     <!-- <td><a href="#" class="edit-btn">Edit</a></td> -->
                                 </tr>

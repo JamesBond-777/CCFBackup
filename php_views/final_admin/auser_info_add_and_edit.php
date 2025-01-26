@@ -1,7 +1,6 @@
 <?php
 // Set the page title dynamically
 $pageTitle = "A - Edit User"; 
-$active="active";
 
 // Include the header
 include('../asset_for_pages/admin_header.php');
@@ -168,7 +167,7 @@ $devices = [
                                 <tr>
                                     <td><?php echo $device['device_name']; ?></td>
                                     <td><?php echo $device['data_used']; ?></td>
-                                    <td><button class="btn btn-danger btn-sm">Remove</button></td>
+                                    <td><button class="btn btn-danger btn-sm" onclick="removeDevice(this)">Remove</button></td>
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>
@@ -193,5 +192,14 @@ function generateAccessCode() {
         code += characters.charAt(Math.floor(Math.random() * characters.length));
     }
     document.getElementById("accessCode").value = code;
+}
+
+// JavaScript function to remove a device with confirmation
+function removeDevice(button) {
+    const confirmation = confirm("Do you really want to remove this device?");
+    if (confirmation) {
+        const row = button.closest('tr');
+        row.parentNode.removeChild(row);
+    }
 }
 </script>

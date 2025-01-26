@@ -78,7 +78,7 @@
             </li>
             <li class="nav-item">
               <a data-bs-toggle="collapse">
-              <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/user/user_profile.php">
+              <a href="http://localhost/CCFBackup/php_views/user/user_profile.php">
                 <i class="fas fa-layer-group"></i>
                 <p>Profile</p>
               </a>
@@ -87,7 +87,7 @@
 
             <li class="nav-item">
               <a data-bs-toggle="collapse">
-                <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/user/post.php">
+                <a href="http://localhost/CCFBackup/php_views/user/post.php">
                 <i class="fas fa-pen-square"></i>
                 <p>Blog Post</p>
 
@@ -95,7 +95,7 @@
 
             <li class="nav-item  active submenu">
               <a data-bs-toggle="collapse">
-              <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/user/faqpage.php">
+              <a href="http://localhost/CCFBackup/php_views/user/faqpage.php">
                 <i class="fas fa-table"></i>
                 <p>FAQs</p>
 
@@ -105,7 +105,7 @@
 
             <li class="nav-item">
               <a data-bs-toggle="collapse">
-              <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/user/instructionspage.php">
+              <a href="http://localhost/CCFBackup/php_views/user/instructionspage.php">
                 <i class="far fa-chart-bar"></i>
                 <p>Instructions</p>
 

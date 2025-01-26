@@ -1,6 +1,6 @@
 <?php
 // Set the page title dynamically
-$active="active";
+
 $pageTitle = "A - Add User"; 
 
 

@@ -104,6 +104,8 @@ include('../asset_for_pages/user_header.php');
                             max-height: 200px;
                         }
 
+                        
+
                     </style>
                     <div class="faq-section">
                         <h2>Frequently Asked Questions</h2>

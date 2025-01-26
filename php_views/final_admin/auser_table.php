@@ -1,7 +1,7 @@
 <?php
 // Set the page title dynamically
 $pageTitle = "A - User Table"; 
-$active="active";
+
 
 // Include the header
 include('../asset_for_pages/admin_header.php');
