@@ -97,7 +97,7 @@
               <div class="collapse" id="charts">
                 <ul class="nav nav-collapse">
                   <li>
-                    <a href="http://localhost/CCFBackup/php_views/final_admin/auser_table.php">
+                    <a href="http://localhost/CCFBackup/php_views/final_owner/ouser_table.php">
                       <i class="far fa-chart-bar"></i>
                       <p>Users Information</p>
                     </a>
