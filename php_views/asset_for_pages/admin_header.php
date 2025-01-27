@@ -69,7 +69,8 @@
         <div class="sidebar-content">
           <ul class="nav nav-secondary">
             <li class="nav-item">
-              <a data-bs-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
+              <a data-bs-toggle="collapse" class="collapsed" aria-expanded="false">
+              <a href="http://localhost/CCFBackup/php_views/final_admin/adashboard.php">
                 <i class="fas fa-home"></i>
                 <p>Home Page</p>
               </a>
@@ -160,7 +161,7 @@
                     </a>
                   </li>
                   <li>
-                    <a href="http://localhost/CCFBackup/php_views/final_admin/admin_add_user.php">
+                    <a href="http://localhost/CCFBackup/php_views/final_admin/add_user.php">
                       <i class="fas fa-layer-group"></i>
                       <p>Add User</p>
                     </a>
