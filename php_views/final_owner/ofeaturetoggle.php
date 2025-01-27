@@ -12,12 +12,11 @@ $dataSharingPercentage = 50; // This can be dynamically fetched from the databas
 $users = [
     ['username' => 'Admin', 'currentSpeedLane' => 'High'],
     ['username' => 'Regular User', 'currentSpeedLane' => 'Mid'],
+    ['username' => 'Guest User', 'currentSpeedLane' => 'Mid'],
 ];
 ?>
 
 <!-- Start of the Container -->
-<div class="container">
-  <div class="page-inner">
     <div class="page-header">
       <h3 class="fw-bold mb-3">Feature List</h3>
       <ul class="breadcrumbs mb-3">
@@ -78,27 +77,28 @@ $users = [
 
       <!-- New Card for URL Restrictions -->
       <div class="col-md-12">
-          <div class="card">
-            <div class="card-header d-flex justify-content-between align-items-center">
-            <div class="card-title">URL Restrictions</div>
-              <span class="info-icon" data-toggle="tooltip" title="Toggle this switch to enable or disable URL-based restrictions, allowing control over user access to specific websites or online content.">
-                <i class="fas fa-info-circle"></i>
-              </span>
-            </div>
-          <div class="card-body">
-            <p>Enable or disable URL-based restrictions for user access.</p>
-              <div class="form-check form-switch" style="--bs-form-switch-width:60px;--bs-form-switch-height:24px">
-                <input class="form-check-input" type="checkbox" role="switch" id="switch"/>
-              </div>
-          </div>
-        </div>
+  <div class="card">
+    <div class="card-header d-flex justify-content-between align-items-center">
+      <div class="card-title">URL Restrictions</div>
+      <span class="info-icon" data-toggle="tooltip" title="Toggle this switch to enable or disable URL-based restrictions, allowing control over user access to specific websites or online content.">
+        <i class="fas fa-info-circle"></i>
+      </span>
+    </div>
+    <div class="card-body">
+      <p>Enable or disable URL-based restrictions for user access.</p>
+      <div class="form-check form-switch" style="--bs-form-switch-width:60px;--bs-form-switch-height:24px">
+        <input class="form-check-input" type="checkbox" role="switch" id="switch" checked/>
       </div>
+    </div>
+  </div>
+</div>
+
 
       <!-- New Card for Guest Access -->
       <div class="col-md-12">
           <div class="card">
             <div class="card-header d-flex justify-content-between align-items-center">
-            <div class="card-title">Guest Access Restrictions</div>
+            <div class="card-title">Guest Internet Access Restrictions</div>
               <span class="info-icon" data-toggle="tooltip" title="Toggle this switch to allow or restrict guest users from accessing the internet, managing their connectivity as needed.">
                 <i class="fas fa-info-circle"></i>
               </span>
@@ -187,9 +187,6 @@ $users = [
       </div>
 
     </div>
-  </div>
-</div>
-
 <?php
 // Include the footer
 include('../asset_for_pages/footer.php');
