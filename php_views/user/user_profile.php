@@ -7,7 +7,6 @@ include('../asset_for_pages/user_header.php');
 
 // Sample device data (you can fetch this from a database)
 $devices = [
-    ['device_name' => 'Device 1', 'data_used' => '2 GB'],
     ['device_name' => 'Device 2', 'data_used' => '3 GB'],
     ['device_name' => 'Device 3', 'data_used' => '1 GB']
 ];
@@ -43,7 +42,7 @@ $devices = [
     <div class="col-md-12">
         <div class="card">
             <div class="card-header">
-                <div class="card-title">Edit Profile</div>
+                <div class="card-title">Profile</div>
             </div>
             <div class="card-body">
                 <form method="POST" action="">
@@ -56,20 +55,20 @@ $devices = [
                     </div>
 
                     <!-- Password Input -->
-                    <div class="form-group row">
+                    <!-- <div class="form-group row">
                         <label for="password" class="col-sm-2 col-form-label">Password:</label>
                         <div class="col-sm-4">
                             <input type="password" class="form-control" id="password" name="password" required>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Confirm Password Input -->
-                    <div class="form-group row">
+                    <!-- <div class="form-group row">
                         <label for="confirmPassword" class="col-sm-2 col-form-label">Confirm Password:</label>
                         <div class="col-sm-4">
                             <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
                         </div>
-                    </div>
+                    </div> -->
 
                    
 
@@ -101,12 +100,12 @@ $devices = [
                     </div>
 
                     <!-- Save and Cancel Buttons -->
-                    <div class="form-group row">
+                    <!-- <div class="form-group row">
                         <div class="col-sm-12 text-right">
                             <button type="button" class="btn btn-secondary">Cancel</button>
                             <button type="submit" class="btn btn-primary">Save</button>
                         </div>
-                    </div>
+                    </div> -->
                 </form>
             </div>
         </div>
@@ -131,13 +130,18 @@ $devices = [
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($devices as $device) : ?>
+                            <tr>
+                                <td>Device 1</td>
+                                <td>2 GB</td>
+                                <td>Main Device</td>
+                            </tr>
+                             <?php foreach ($devices as $device) : ?>
                                 <tr>
                                     <td><?php echo $device['device_name']; ?></td>
                                     <td><?php echo $device['data_used']; ?></td>
                                     <td><button class="btn btn-danger btn-sm" onclick="removeDevice(this)">Remove</button></td>
                                 </tr>
-                            <?php endforeach; ?>
+                            <?php endforeach; ?> 
                         </tbody>
                     </table>
                 </div>
