@@ -7,6 +7,31 @@ include('../asset_for_pages/owner_header.php');
 ?>
 
 <div class="page-inner">
+    <!-- Quick Links Section -->
+    <div class="mb-4">
+        <button class="btn btn-primary" id="toggleQuickLinks">Quick Links</button>
+        <div id="quickLinks" class="mt-3" style="display: none;">
+            <div class="d-flex justify-content-around">
+                <a href="add_user.php" class="text-center text-decoration-none">
+                    <i class="fas fa-user-plus fa-2x"></i>
+                    <div>Add User</div>
+                </a>
+                <a href="bandwidth_usage.php" class="text-center text-decoration-none">
+                    <i class="fas fa-chart-line fa-2x"></i>
+                    <div>Bandwidth Usage</div>
+                </a>
+                <a href="device_management.php" class="text-center text-decoration-none">
+                    <i class="fas fa-desktop fa-2x"></i>
+                    <div>Device Management</div>
+                </a>
+                <a href="help_support.php" class="text-center text-decoration-none">
+                    <i class="fas fa-life-ring fa-2x"></i>
+                    <div>Help & Support</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
     <!-- Dashboard Main Content -->
     <div class="row">
       
@@ -179,25 +204,35 @@ include('../asset_for_pages/footer.php');
 ?>
 
 <script src="../../assets/js/core/jquery-3.7.1.min.js"></script>
-    <script src="../../assets/js/core/popper.min.js"></script>
-    <script src="../../assets/js/core/bootstrap.min.js"></script>
+<script src="../../assets/js/core/popper.min.js"></script>
+<script src="../../assets/js/core/bootstrap.min.js"></script>
 
-    <!-- jQuery Scrollbar -->
-    <script src="../../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
-    <!-- Datatables -->
-    <script src="../../assets/js/plugin/datatables/datatables.min.js"></script>
-    <!-- Kaiadmin JS -->
-    <script src="../../assets/js/kaiadmin.min.js"></script>
-    <!-- Kaiadmin DEMO methods, don't include it in your project! -->
-    <script src="../../assets/js/setting-demo2.js"></script>
+<!-- jQuery Scrollbar -->
+<script src="../../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+<!-- Datatables -->
+<script src="../../assets/js/plugin/datatables/datatables.min.js"></script>
+<!-- Kaiadmin JS -->
+<script src="../../assets/js/kaiadmin.min.js"></script>
+<!-- Kaiadmin DEMO methods, don't include it in your project! -->
+<script src="../../assets/js/setting-demo2.js"></script>
 
-    
-<!-- Script for the charts -->
 <!-- Chart.js CDN -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
+    // Toggle Quick Links Visibility
+    const quickLinksButton = document.getElementById('toggleQuickLinks');
+    const quickLinksDiv = document.getElementById('quickLinks');
+
+    quickLinksButton.addEventListener('click', function () {
+      if (quickLinksDiv.style.display === 'none' || quickLinksDiv.style.display === '') {
+        quickLinksDiv.style.display = 'block'; // Show the links
+      } else {
+        quickLinksDiv.style.display = 'none'; // Hide the links
+      }
+    });
+
     // Line Chart for Total Bandwidth Used
     var ctx1 = document.getElementById('bandwidthChart').getContext('2d');
     var bandwidthChart = new Chart(ctx1, {
@@ -220,7 +255,6 @@ include('../asset_for_pages/footer.php');
         }
       }
     });
-
 
     // Bar Chart for Devices Connected
     var ctx3 = document.getElementById('deviceStatsChart').getContext('2d');
