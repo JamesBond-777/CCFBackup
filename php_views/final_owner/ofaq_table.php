@@ -63,10 +63,17 @@ $faqData = [
                   <td><?php echo $faq['id']; ?></td>
                   <td><?php echo $faq['question']; ?></td>
                   <td><?php echo $faq['answer']; ?></td>
-                  <td>
-                    <button class="btn btn-warning btn-sm" onclick="editFaq(<?php echo $faq['id']; ?>)">Edit</button>
-                    <button class="btn btn-danger btn-sm" onclick="removeRow(this)">Delete</button>
-                  </td>
+                    <style>
+                          .btn-action {
+                          margin-right: 8px;
+                          margin-bottom: 5px; /* To avoid overlap in stacked view */
+                          }
+                      </style>
+
+                      <td>
+                        <button class="btn btn-warning btn-sm btn-action" onclick="editFaq(<?php echo $faq['id']; ?>)">Edit</button>
+                        <button class="btn btn-danger btn-sm btn-action" onclick="removeRow(this)">Delete</button>
+                      </td>
                 </tr>
               <?php endforeach; ?>
             </tbody>

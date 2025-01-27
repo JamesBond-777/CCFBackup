@@ -19,8 +19,6 @@ include('../asset_for_pages/owner_header.php');
   }
 </style>
 
-<div class="container">
-  <div class="page-inner">
     <div class="page-header">
       <ul class="breadcrumbs mb-3">
         <li class="nav-home">
@@ -172,9 +170,50 @@ include('../asset_for_pages/owner_header.php');
         </div>
       </div>
 
+      <!-- Card 4: Devices -->
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="card-title">Allowed URLs for Guest User</div>
+            <span class="info-icon" data-toggle="tooltip" title="Allow specific URLs for the guest users by adding them here. You can also remove them from the list below.">
+              <i class="fas fa-info-circle"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <input type="text" class="form-control mb-3" placeholder="Add URL" onfocus="showSuggestions('urlSuggestions')" list="urlSuggestions">
+            <datalist id="urlSuggestions">
+              <option value="https://example.com">
+              <option value="https://anotherurl.com">
+              <option value="https://website.com">
+            </datalist>
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>SN</th>
+                    <th>Item List</th>
+                    <th>Edit</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>https://example.com</td>
+                    <td><button class="btn btn-danger btn-sm" onclick="removeRow(this)">Remove</button></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>https://anotherurl.com</td>
+                    <td><button class="btn btn-danger btn-sm" onclick="removeRow(this)">Remove</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    
     </div>
-  </div>
-</div>
 
 <?php
 // Include the footer

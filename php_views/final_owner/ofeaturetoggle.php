@@ -5,28 +5,6 @@ $pageTitle = "O - Feature Toggle";
 // Include the header
 include('../asset_for_pages/owner_header.php');
 
-// Sample data for the features (this would come from a database or another source in a real application)
-$features = [
-    [
-        'title' => 'Payments',
-        'description' => 'This toggle enables or disables payment functionality.',
-        'info' => 'This feature lets you use/disable the payments feature. When you enable this feature, this switches on the payment options for the regular users, which makes the users pay for the access to this service.',
-        'toggleState' => true
-    ],
-    [
-        'title' => 'User Restrictions',
-        'description' => 'Toggle user restrictions for specific users based on device usage or data limits.',
-        'info' => 'This feature lets you apply restrictions to users based on device usage, data usage, or other parameters.',
-        'toggleState' => true
-    ],
-    [
-        'title' => 'URL Restrictions',
-        'description' => 'Enable or disable URL-based restrictions for user access.',
-        'info' => 'This feature lets you restrict access to certain URLs or websites based on the device or user level.',
-        'toggleState' => false
-    ]
-];
-
 // Simulate getting the Data Sharing Percentage from the database or other source
 $dataSharingPercentage = 50; // This can be dynamically fetched from the database
 
@@ -61,40 +39,92 @@ $users = [
     </div>
 
     <div class="row">
-      <!-- Loop through the features array -->
-      <?php foreach ($features as $feature) : ?>
-        <div class="col-md-12">
+
+      <!-- New Card for Payments -->
+      <div class="col-md-12">
           <div class="card">
             <div class="card-header d-flex justify-content-between align-items-center">
-              <div class="card-title"><?php echo $feature['title']; ?></div>
-              <!-- Info Icon -->
-              <button class="info-button" aria-label="More Info" onclick="toggleTooltip('<?php echo $feature['title']; ?>')">
-                <span>i</span>
-              </button>
+            <div class="card-title">Payments</div>
+              <span class="info-icon" data-toggle="tooltip" title="Toggle this switch to enable or disable payment functionality for users, allowing them to manage their payments and access services based on payment status.">
+                <i class="fas fa-info-circle"></i>
+              </span>
             </div>
-            <div class="card-body">
-              <p><?php echo $feature['description']; ?></p>
+          <div class="card-body">
+            <p>This toggle enables or disables payment functionality.</p>
               <div class="form-check form-switch" style="--bs-form-switch-width:60px;--bs-form-switch-height:24px">
-                <input class="form-check-input" type="checkbox" role="switch" id="switch<?php echo $feature['title']; ?>" <?php echo $feature['toggleState'] ? 'checked' : ''; ?> />
+                <input class="form-check-input" type="checkbox" role="switch" id="switch"/>
               </div>
-              <!-- Tooltip content -->
-              <div class="info-tooltip" id="tooltip<?php echo $feature['title']; ?>">
-                <?php echo $feature['info']; ?>
-              </div>
-            </div>
           </div>
         </div>
-      <?php endforeach; ?>
+      </div>
+
+      <!-- New Card for User Restrictions -->
+      <div class="col-md-12">
+          <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="card-title">User Restrictions</div>
+              <span class="info-icon" data-toggle="tooltip" title="Toggle this switch to apply restrictions for specific users, managing their access based on device usage, data limits, or predefined rules.">
+                <i class="fas fa-info-circle"></i>
+              </span>
+            </div>
+          <div class="card-body">
+            <p>Toggle user restrictions for specific users based on device usage or data limits.</p>
+              <div class="form-check form-switch" style="--bs-form-switch-width:60px;--bs-form-switch-height:24px">
+                <input class="form-check-input" type="checkbox" role="switch" id="switch"/>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- New Card for URL Restrictions -->
+      <div class="col-md-12">
+          <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="card-title">URL Restrictions</div>
+              <span class="info-icon" data-toggle="tooltip" title="Toggle this switch to enable or disable URL-based restrictions, allowing control over user access to specific websites or online content.">
+                <i class="fas fa-info-circle"></i>
+              </span>
+            </div>
+          <div class="card-body">
+            <p>Enable or disable URL-based restrictions for user access.</p>
+              <div class="form-check form-switch" style="--bs-form-switch-width:60px;--bs-form-switch-height:24px">
+                <input class="form-check-input" type="checkbox" role="switch" id="switch"/>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- New Card for Guest Access -->
+      <div class="col-md-12">
+          <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="card-title">Guest Access Restrictions</div>
+              <span class="info-icon" data-toggle="tooltip" title="Toggle this switch to allow or restrict guest users from accessing the internet, managing their connectivity as needed.">
+                <i class="fas fa-info-circle"></i>
+              </span>
+            </div>
+          <div class="card-body">
+            <p>This toggle helps you to allow the guest user to access the internet or not.</p>
+              <div class="form-check form-switch" style="--bs-form-switch-width:60px;--bs-form-switch-height:24px">
+                <input class="form-check-input" type="checkbox" role="switch" id="switch"/>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+      
 
       <!-- New Card for Data Sharing Percentage -->
       <div class="col-md-12">
         <div class="card">
           <div class="card-header d-flex justify-content-between align-items-center">
             <div class="card-title">Data Sharing Percentage</div>
-            <button class="info-button" aria-label="More Info" onclick="toggleTooltip('dataSharing')">
-              <span>i</span>
-            </button>
-          </div>
+              <span class="info-icon" data-toggle="tooltip" title="Adjust the slider to set the percentage of your data (out of 200 GB) to share with other users. Use the number field for precise adjustments.">
+                <i class="fas fa-info-circle"></i>
+              </span>
+            </div>
           <div class="card-body">
             <p>This toggle enables or disables the data sharing percentage with other users. Adjust the slider to control the data you want to share.</p>
 
@@ -112,10 +142,6 @@ $users = [
               </div>
             </div>
 
-            <!-- Tooltip content -->
-            <div class="info-tooltip" id="tooltipDataSharing">
-              This feature allows you to set the percentage of data you want to share with others. Adjust the slider or enter the value manually to control the percentage of data shared.
-            </div>
           </div>
         </div>
       </div>
@@ -125,10 +151,10 @@ $users = [
         <div class="card">
           <div class="card-header d-flex justify-content-between align-items-center">
             <div class="card-title">Speed Lane</div>
-            <button class="info-button" aria-label="More Info" onclick="toggleTooltip('speedLane')">
-              <span>i</span>
-            </button>
-          </div>
+              <span class="info-icon" data-toggle="tooltip" title="Use the dropdown to assign different bandwidth tiers (Low, Mid, High) to users, allowing you to control their internet speed based on their needs.">
+                <i class="fas fa-info-circle"></i>
+              </span>
+            </div>
           <div class="card-body">
             <p>The Speed Lane feature allows you to assign different bandwidth tiers (Low, Mid, High) to each user. You can control the speed for each user using the dropdown below.</p>
 
@@ -156,10 +182,6 @@ $users = [
               </tbody>
             </table>
             
-            <!-- Tooltip content -->
-            <div class="info-tooltip" id="tooltipSpeedLane">
-              This feature allows you to set the speed lane (Low, Mid, High) for each user. The speed lane controls the bandwidth allocation for users.
-            </div>
           </div>
         </div>
       </div>
@@ -174,11 +196,13 @@ include('../asset_for_pages/footer.php');
 ?>
 
 <script>
-// Function to toggle the visibility of the tooltip
-function toggleTooltip(feature) {
-    const tooltip = document.getElementById('tooltip' + capitalizeFirstLetter(feature));
-    tooltip.style.display = tooltip.style.display === 'block' ? 'none' : 'block';
-}
+// Enable tooltips
+document.addEventListener('DOMContentLoaded', function () {
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'));
+    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+        new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+});
 
 // Function to capitalize the first letter of a string (for dynamic tooltip IDs)
 function capitalizeFirstLetter(string) {
@@ -199,33 +223,12 @@ function updateSliderValue(value) {
 </script>
 
 <style>
-/* Styling for info button and tooltip */
-.info-button {
-    background-color: transparent;
-    border: none;
-    font-size: 18px;
-    cursor: pointer;
-    color: #007bff;
-}
-
-.info-tooltip {
-    display: none;
-    margin-top: 5px;
-    padding: 10px;
-    background-color: #f8f9fa;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-    font-size: 14px;
-    color: #333;
-}
-
-.card-header .info-button-wrapper {
-    position: relative;
-    display: inline-block;
-}
-
-.card-body p {
-    margin-bottom: 15px;
-}
+  .info-icon {
+    font-size: 1.5em; /* Increase icon size */
+    color: blue; /* Change icon color to blue */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  .tooltip-inner {
+    font-size: 1.25em; /* Increase tooltip text size */
+  }
 </style>

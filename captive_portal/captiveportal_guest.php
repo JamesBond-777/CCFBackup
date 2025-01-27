@@ -34,7 +34,7 @@
 		      			<h3 class="mb-4">Sign In</h3>
 		      		</div>
 		      	</div>
-							<form action="http://localhost/CCFBackup/php_views/user/user_profile.php" method="GET" class="signin-form">
+							<form action="http://localhost/CCFBackup/php_views/guest_user/homepage.php" method="GET" class="signin-form">
 		      		<div class="form-group mt-3">
 		      			<input type="text" name="username" class="form-control" required>
 		      			<label class="form-control-placeholder" for="username">Username</label>
