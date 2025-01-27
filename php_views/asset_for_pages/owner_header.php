@@ -31,6 +31,7 @@
   <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="../../assets/css/plugins.min.css" />
   <link rel="stylesheet" href="../../assets/css/kaiadmin.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link rel="stylesheet" href="../../assets/css/demo.css" />
@@ -62,6 +63,8 @@
         </div>
         <!-- End Logo Header -->
       </div>
+
+
       <div class="sidebar-wrapper scrollbar scrollbar-inner">
         <div class="sidebar-content">
           <ul class="nav nav-secondary">
@@ -144,6 +147,14 @@
               <a href="http://localhost/CCFBackup/php_views/final_owner/ofeaturetoggle.php">
                 <i class="fas fa-table"></i>
                 <p>Feature Toggle</p>
+              </a>
+            </li>
+
+            <li class="nav-item  active submenu">
+              <a data-bs-toggle="collapse">
+              <a href="http://localhost/CCFBackup/php_views/final_owner/owner_restrictions.php">
+                <i class="fas fa-table"></i>
+                <p>Restrictions</p>
               </a>
             </li>
 
@@ -271,14 +282,39 @@
         <nav class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom">
           <div class="container-fluid">
             <nav class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <button type="submit" class="btn btn-search pe-1">
-                    <i class="fa fa-search search-icon"></i>
-                  </button>
-                </div>
-                <input type="text" placeholder="Search ..." class="form-control" />
-              </div>
+              <!-- Search Bar Suggestion  -->
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <button type="submit" class="btn btn-search pe-1">
+                <i class="fa fa-search search-icon"></i>
+              </button>
+            </div>
+            <!-- Search with a datalist for suggestions -->
+                <input
+                    type="text"
+                    placeholder="Search ..."
+                    class="form-control"
+                    list="quickLinks"
+                    id="quickSearch"
+                />
+                  <datalist id="quickLinks">
+                  <option value="faq edit">
+                  <option value="report">
+                  </datalist>
+          </div>
+
+          <script>
+            document.getElementById('quickSearch').addEventListener('change', function() {
+            const value = this.value.toLowerCase().trim();
+
+            if (value === 'faq edit') {
+              window.location.href = '../final_owner/ofaq_add_form.php';
+            } else if (value === 'report') {
+              window.location.href = '../final_owner/oreport.php';
+            }
+            });
+          </script>
+    <!-- to here -->
             </nav>
 
             <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">

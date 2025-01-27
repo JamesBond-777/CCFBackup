@@ -142,19 +142,19 @@ include('../asset_for_pages/owner_header.php');
                 <tbody>
                   <tr>
                     <td>1</td>
-                    <td>Desktop</td>
+                    <td>Device 1</td>
                     <td>30 GB</td>
                     <td>Active</td>
                   </tr>
                   <tr>
                     <td>2</td>
-                    <td>Smartphone</td>
+                    <td>Device 2</td>
                     <td>20 GB</td>
                     <td>Active</td>
                   </tr>
                   <tr>
                     <td>3</td>
-                    <td>Laptop</td>
+                    <td>Device 3</td>
                     <td>10 GB</td>
                     <td>Inactive</td>
                   </tr>
