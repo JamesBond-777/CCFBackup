@@ -15,7 +15,7 @@ include('../asset_for_pages/owner_header.php');
         <!-- Total Bandwidth Used Card -->
         <div class="card">
           <div class="card-header">
-            <div class="card-title">Total Bandwidths Used</div>
+            <div class="card-title">Total Bandwidths Used Jan 2025 4th Week</div>
           </div>
           <div class="card-body">
             <canvas id="bandwidthChart"></canvas> <!-- Placeholder for chart -->
@@ -29,7 +29,9 @@ include('../asset_for_pages/owner_header.php');
         <div class="card flex-fill">
           <div class="card-header d-flex justify-content-between align-items-center">
             <div class="card-title">Active Users</div>
-            <button class="btn btn-success">Add User</button> <!-- Add User Button -->
+           <a href="add_user.php">
+            <button class="btn btn-success">Add User</button>
+           </a> <!-- Add User Button -->
           </div>
           <div class="card-body">
             <div class="table-responsive">
@@ -43,8 +45,12 @@ include('../asset_for_pages/owner_header.php');
                 </thead>
                 <tbody>
                   <tr>
-                    <td>1</td>
-                    <td>John Doe</td>
+                    <td>1</td>                    
+                    <td>
+                    <a style="text-decoration: none; color: inherit;" href="user-info-and-edit.php">
+                      John Doe
+                    </a>
+                  </td>                  
                     <td>50</td>
                   </tr>
                   <tr>
@@ -171,3 +177,72 @@ include('../asset_for_pages/owner_header.php');
 // Include the footer
 include('../asset_for_pages/footer.php');
 ?>
+
+<script src="../../assets/js/core/jquery-3.7.1.min.js"></script>
+    <script src="../../assets/js/core/popper.min.js"></script>
+    <script src="../../assets/js/core/bootstrap.min.js"></script>
+
+    <!-- jQuery Scrollbar -->
+    <script src="../../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <!-- Datatables -->
+    <script src="../../assets/js/plugin/datatables/datatables.min.js"></script>
+    <!-- Kaiadmin JS -->
+    <script src="../../assets/js/kaiadmin.min.js"></script>
+    <!-- Kaiadmin DEMO methods, don't include it in your project! -->
+    <script src="../../assets/js/setting-demo2.js"></script>
+
+    
+<!-- Script for the charts -->
+<!-- Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Line Chart for Total Bandwidth Used
+    var ctx1 = document.getElementById('bandwidthChart').getContext('2d');
+    var bandwidthChart = new Chart(ctx1, {
+      type: 'line',
+      data: {
+        labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+        datasets: [{
+          label: 'Bandwidth Used (GB)',
+          data: [12, 15, 10, 20, 18, 25, 30],
+          borderColor: '#4e73df',
+          backgroundColor: 'rgba(78, 115, 223, 0.1)',
+          borderWidth: 2
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+
+
+    // Bar Chart for Devices Connected
+    var ctx3 = document.getElementById('deviceStatsChart').getContext('2d');
+    var deviceStatsChart = new Chart(ctx3, {
+      type: 'bar',
+      data: {
+        labels: ['Device 1', 'Device 2', 'Device 3', 'Device 4', 'Device 5'],
+        datasets: [{
+          label: 'Data Used (GB)',
+          data: [10, 15, 5, 20, 25],
+          backgroundColor: '#ffc107',
+          borderColor: '#ffc107',
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  });
+</script>

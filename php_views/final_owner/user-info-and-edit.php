@@ -1,14 +1,17 @@
 <?php
 // Set the page title dynamically
 $pageTitle = "O - Edit User"; 
+$randomUsername = "John Doe";
+$randomEmail = "John.doe@flemingcollege.ca";
+$password = "PassW0r12";
 
 // Include the header
 include('../asset_for_pages/owner_header.php');
 
 // Assuming you have fetched the user data from the database
 // Generate random data for the form fields (for demonstration purposes)
-$randomUsername = 'user_' . rand(1000, 9999);
-$randomEmail = 'user_' . rand(1000, 9999) . '@example.com';
+// $randomUsername = 'user_' . rand(1000, 9999);
+// $randomEmail = 'user_' . rand(1000, 9999) . '@example.com';
 $randomAccessCode = strtoupper(substr(str_shuffle('ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'), 0, 10));
 
 // Sample device data (you can fetch this from a database)
@@ -30,7 +33,7 @@ $devices = [
             <i class="icon-arrow-right"></i>
         </li>
         <li class="nav-item">
-            <a href="#">User</a>
+            <a href="user_table.php">User</a>
         </li>
         <li class="separator">
             <i class="icon-arrow-right"></i>
@@ -57,7 +60,7 @@ $devices = [
                     <div class="form-group row">
                         <label for="username" class="col-sm-2 col-form-label">Username:</label>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" id="username" name="username" value="<?php echo $randomUsername; ?>" readonly>
+                            <input type="text" class="form-control" id="username" name="username" value="<?php echo $randomUsername; ?>">
                         </div>
                     </div>
 
@@ -65,7 +68,7 @@ $devices = [
                     <div class="form-group row">
                         <label for="password" class="col-sm-2 col-form-label">Password:</label>
                         <div class="col-sm-4">
-                            <input type="password" class="form-control" id="password" name="password" required>
+                            <input type="password" class="form-control" id="password" name="password" required value = <?php echo $password; ?>>
                         </div>
                     </div>
 
@@ -73,7 +76,7 @@ $devices = [
                     <div class="form-group row">
                         <label for="confirmPassword" class="col-sm-2 col-form-label">Confirm Password:</label>
                         <div class="col-sm-4">
-                            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+                            <input type="password"  class="form-control" id="confirmPassword" name="confirmPassword" required value= <?php echo $password; ?>>
                         </div>
                     </div>
 
@@ -81,7 +84,7 @@ $devices = [
                     <div class="form-group row">
                         <label for="email" class="col-sm-2 col-form-label">Email:</label>
                         <div class="col-sm-4">
-                            <input type="email" class="form-control" id="email" name="email" value="<?php echo $randomEmail; ?>" readonly>
+                            <input type="email" class="form-control" id="email" name="email" value="<?php echo $randomEmail; ?>">
                         </div>
                     </div>
 
@@ -162,13 +165,18 @@ $devices = [
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($devices as $device) : ?>
+                            <tr>
+                                <td>Device 1</td>
+                                <td>2 GB</td>
+                                <td>Main Device</td>
+                            </tr>
+                             <?php foreach ($devices as $device) : ?>
                                 <tr>
                                     <td><?php echo $device['device_name']; ?></td>
                                     <td><?php echo $device['data_used']; ?></td>
                                     <td><button class="btn btn-danger btn-sm" onclick="removeDevice(this)">Remove</button></td>
                                 </tr>
-                            <?php endforeach; ?>
+                            <?php endforeach; ?> 
                         </tbody>
                     </table>
                 </div>
