@@ -45,11 +45,11 @@
 		              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 		            </div> -->
 
-		            <div class="form-group">
+		            <!-- <div class="form-group">
 							<button type="submit" class="form-control btn btn-primary rounded submit px-3">
 								Continue
 							</button>
-		            </div>
+		            </div> -->
 
 					<!-- Guest Login Button -->
 					<div class="form-group">
