@@ -95,6 +95,18 @@ include('../asset_for_pages/owner_header.php');
                     </div>
 
                     <div class="form-group row">
+                        <label for="bandwidthCap" class="col-sm-2 col-form-label">Bandwidth Cap (User Level):</label>
+                        <div class="col-sm-4">
+                            <select class="form-control" id="bandwidthCap" name="bandwidthCap">
+                                <option value="50">50 GB</option>
+                                <option value="100">100 GB</option>
+                                <option value="150">150 GB</option>
+                                <option value="custom">Custom</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
                         <div class="col-sm-12 text-right">
                             <button type="button" class="btn btn-secondary">Cancel</button>
                             <button id="addUserBtn" type="submit" class="btn btn-primary">Add</button>
