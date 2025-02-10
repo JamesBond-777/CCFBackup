@@ -119,12 +119,12 @@
             </li>
 
             <li class="nav-item">
-              <a data-bs-toggle="collapse" href="#faqmgmt">
+              <a  href="http://localhost/CCFBackup/php_views/final_owner/ofaq_table.php">
                 <i class="far fa-chart-bar"></i>
                 <p>FAQs Management</p>
                 <span class="caret"></span>
               </a>
-              <div class="collapse" id="faqmgmt">
+              <!-- <div class="collapse" id="charts">
                 <ul class="nav nav-collapse">
                   <li>
                     <a href="http://localhost/CCFBackup/php_views/final_admin/afaq_table.php">
@@ -139,8 +139,9 @@
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> -->
             </li>
+
 
             <li class="nav-item  active submenu">
               <a data-bs-toggle="collapse">

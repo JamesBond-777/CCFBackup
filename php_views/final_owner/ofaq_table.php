@@ -44,7 +44,7 @@ $faqData = [
     <div class="card">
       <div class="card-header d-flex justify-content-between">
         <div class="card-title">Manage Q&A</div>
-        <button class="btn btn-primary" onclick="window.location.href='addEditForm.php'">Add New</button> <!-- Updated to PHP -->
+        <button class="btn btn-primary" onclick="window.location.href='ofaq_add_form.php'">Add New</button> <!-- Updated to PHP -->
       </div>
       <div class="card-body">
         <div class="table-responsive">
