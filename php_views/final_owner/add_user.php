@@ -37,6 +37,20 @@ include('../asset_for_pages/owner_header.php');
             <div class="card-body">
                 <form id="addUserForm">
                     <div class="form-group row">
+                        <label for="fullName" class="col-sm-2 col-form-label">Full Name:</label>
+                        <div class="col-sm-4">
+                            <input class="form-control" id="fullName" name="fullName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="phoneNumber" class="col-sm-2 col-form-label">Phone Number:</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
                         <label for="username" class="col-sm-2 col-form-label">Username:</label>
                         <div class="col-sm-4">
                             <input class="form-control" id="username" name="username" required>
@@ -45,18 +59,14 @@ include('../asset_for_pages/owner_header.php');
                     
                     <div class="form-group row">
                         <label for="password" class="col-sm-2 col-form-label">Password:</label>
-                        <div class="col-sm-4">
-                            <input type="password" class="form-control" id="password" name="password" required>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="password" name="password" readonly required>
+                        </div>
+                        <div class="col-sm-1">
+                            <button type="button" class="btn btn-secondary" onclick="generatePassword()">Generate</button>
                         </div>
                     </div>
-                    
-                    <div class="form-group row">
-                        <label for="confirmPassword" class="col-sm-2 col-form-label">Confirm Password:</label>
-                        <div class="col-sm-4">
-                            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
-                        </div>
-                    </div>
-                    
+
                     <div class="form-group row">
                         <label for="email" class="col-sm-2 col-form-label">Email:</label>
                         <div class="col-sm-4">
@@ -85,18 +95,6 @@ include('../asset_for_pages/owner_header.php');
                     </div>
 
                     <div class="form-group row">
-                            <label for="bandwidth" class="col-sm-2 col-form-label">Bandwidth Allocated:</label>
-                            <div class="col-sm-4">
-                                <select class="form-control" id="bandwidth" name="bandwidth">
-                                    <option>50</option>
-                                    <option>100</option>
-                                    <option>150</option>
-                                    <option>Custom</option>
-                                </select>
-                            </div>
-                        </div>
-                    
-                    <div class="form-group row">
                         <div class="col-sm-12 text-right">
                             <button type="button" class="btn btn-secondary">Cancel</button>
                             <button id="addUserBtn" type="submit" class="btn btn-primary">Add</button>
@@ -124,19 +122,22 @@ function generateAccessCode() {
     document.getElementById("accessCode").value = code;
 }
 
+// Function to generate a random password
+function generatePassword() {
+    var words = ["Horse", "Battery", "Staple", "Cloud", "Secure", "Bridge", "River", "Table", "Laptop", "Coffee"];
+    var password = words[Math.floor(Math.random() * words.length)] + 
+                   words[Math.floor(Math.random() * words.length)] + 
+                   words[Math.floor(Math.random() * words.length)] + 
+                   Math.floor(Math.random() * 100);
+    document.getElementById("password").value = password;
+}
+
 // Form validation and submission
 $(document).ready(function () {
     $("#addUserForm").on("submit", function (event) {
         event.preventDefault();
-        var password = $("#password").val();
-        var confirmPassword = $("#confirmPassword").val();
         var email = $("#email").val();
         var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        
-        if (password !== confirmPassword) {
-            showNotification("Passwords do not match!", "danger");
-            return;
-        }
         
         if (!emailPattern.test(email)) {
             showNotification("Invalid email format!", "danger");

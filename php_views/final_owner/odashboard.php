@@ -10,7 +10,7 @@ include('../asset_for_pages/owner_header.php');
     <!-- Quick Links Section -->
     <div class="mb-4">
         <button class="btn btn-primary" id="toggleQuickLinks">Quick Links</button>
-        <div id="quickLinks" class="mt-3" style="display: none;">
+        <div id="quickLinks" class="mt-3">
             <div class="d-flex justify-content-around">
                 <a href="add_user.php" class="text-center text-decoration-none">
                     <i class="fas fa-user-plus fa-2x"></i>

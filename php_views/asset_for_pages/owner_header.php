@@ -89,12 +89,12 @@
             </li> -->
 
             <li class="nav-item">
-              <a data-bs-toggle="collapse" href="#charts">
+              <a data-bs-toggle="collapse" href="#usermanagement">
                 <i class="far fa-chart-bar"></i>
                 <p>User Management</p>
                 <span class="caret"></span>
               </a>
-              <div class="collapse" id="charts">
+              <div class="collapse" id="usermanagement">
                 <ul class="nav nav-collapse">
                   <li>
                     <a href="http://localhost/CCFBackup/php_views/final_owner/ouser_table.php">
@@ -119,12 +119,12 @@
             </li>
 
             <li class="nav-item">
-              <a data-bs-toggle="collapse" href="#charts">
+              <a data-bs-toggle="collapse" href="#faqmgmt">
                 <i class="far fa-chart-bar"></i>
                 <p>FAQs Management</p>
                 <span class="caret"></span>
               </a>
-              <div class="collapse" id="charts">
+              <div class="collapse" id="faqmgmt">
                 <ul class="nav nav-collapse">
                   <li>
                     <a href="http://localhost/CCFBackup/php_views/final_admin/afaq_table.php">
