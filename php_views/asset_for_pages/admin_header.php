@@ -110,7 +110,7 @@
               <a  href="http://localhost/CCFBackup/php_views/final_admin/afaq_table.php">
                 <i class="far fa-chart-bar"></i>
                 <p>FAQs Management</p>
-                <span class="caret"></span>
+                
               </a>
               <!-- <div class="collapse" id="charts">
                 <ul class="nav nav-collapse">
@@ -147,10 +147,10 @@
             </li> -->
 
             <li class="nav-item">
-              <a data-bs-toggle="collapse" href="#charts">
+              <a href="http://localhost/CCFBackup/php_views/final_admin/auser_table.php">
                 <i class="far fa-chart-bar"></i>
                 <p>User Management</p>
-                <span class="caret"></span>
+                
               </a>
               <div class="collapse" id="charts">
                 <ul class="nav nav-collapse">

@@ -36,17 +36,16 @@ include('../asset_for_pages/admin_header.php');
               <h4 class="card-title">User Table</h4>
               <button
                 class="btn btn-primary btn-round ms-auto"
-                data-bs-toggle="modal"
-                data-bs-target="#addRowModal"
+                onclick="window.location.href='add_user.php'"
               >
                 <i class="fa fa-plus"></i>
-                Add Row
+                Add User
               </button>
             </div>
           </div>
           <div class="card-body">
             <!-- Modal -->
-            <div
+            <!-- <div
               class="modal fade"
               id="addRowModal"
               tabindex="-1"
@@ -141,7 +140,7 @@ include('../asset_for_pages/admin_header.php');
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
 
             <div class="table-responsive">
               <table id="add-row" class="display table table-striped table-hover">
@@ -174,6 +173,7 @@ include('../asset_for_pages/admin_header.php');
                           title=""
                           class="btn btn-link btn-primary btn-lg"
                           data-original-title="Edit Task"
+                          onclick="window.location.href='auser_info_add_and_edit.php'"
                         >
                           <i class="fa fa-edit"></i>
                         </button>
@@ -201,6 +201,7 @@ include('../asset_for_pages/admin_header.php');
                           title=""
                           class="btn btn-link btn-primary btn-lg"
                           data-original-title="Edit Task"
+                          onclick="window.location.href='auser_info_add_and_edit.php'"
                         >
                           <i class="fa fa-edit"></i>
                         </button>
@@ -210,6 +211,7 @@ include('../asset_for_pages/admin_header.php');
                           title=""
                           class="btn btn-link btn-danger"
                           data-original-title="Remove"
+                          
                         >
                           <i class="fa fa-times"></i>
                         </button>
@@ -228,6 +230,7 @@ include('../asset_for_pages/admin_header.php');
                           title=""
                           class="btn btn-link btn-primary btn-lg"
                           data-original-title="Edit Task"
+                          onclick="window.location.href='auser_info_add_and_edit.php'"
                         >
                           <i class="fa fa-edit"></i>
                         </button>

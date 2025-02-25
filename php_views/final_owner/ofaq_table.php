@@ -71,7 +71,7 @@ $faqData = [
                       </style>
 
                       <td>
-                        <button class="btn btn-warning btn-sm btn-action" onclick="editFaq(<?php echo $faq['id']; ?>)">Edit</button>
+                        <button class="btn btn-warning btn-sm btn-action" onclick="window.location.href='ofaq_add_form.php'">Edit</button>
                         <button class="btn btn-danger btn-sm btn-action" onclick="removeRow(this)">Delete</button>
                       </td>
                 </tr>
@@ -103,7 +103,8 @@ function removeRow(button) {
 }
 
 // Function to edit FAQ (redirect to the edit page with the FAQ ID)
-function editFaq(id) {
-    window.location.href = 'edit_faq.php?id=' + id;
-}
+// function editFaq() {
+//     window.location.href = 'ofaq_add_form.php';
+// }
+// 
 </script>
