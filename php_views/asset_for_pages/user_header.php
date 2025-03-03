@@ -109,9 +109,14 @@
               <a href="http://localhost/CCFBackup/php_views/user/instructionspage.php">
                 <i class="far fa-chart-bar"></i>
                 <p>Instructions</p>
-
               </a>
+            </li>
 
+            <li class="nav-item">
+                <a href="http://localhost/CCFBackup/php_views/user/instructionspage.php">
+                  <i class="far fa-question-circle"></i>
+                  <p>Support</p>
+                </a>
             </li>
 
             <!-- <li class="nav-item">

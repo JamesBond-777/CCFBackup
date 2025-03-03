@@ -142,7 +142,6 @@
               </a>
             </li>
 
-            
             <li class="nav-item">
               <a href="http://localhost/CCFBackup/php_views/final_owner/post.php">
                 <i class="fas fa-pen-square"></i>
@@ -150,6 +149,12 @@
               </a>
             </li>
 
+            <li class="nav-item">
+              <a href="http://localhost/CCFBackup/php_views/final_owner/oreport.php">
+                  <i class="far fa-question-circle"></i>
+                  <p>Support</p>
+                </a>
+            </li>
             
           </ul>
         </div>

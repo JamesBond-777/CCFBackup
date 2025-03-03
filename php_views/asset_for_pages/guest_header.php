@@ -160,7 +160,7 @@
                     </li>
                     <li>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="../captive_portal/geda.html">Logout</a>
+                      <a class="dropdown-item" href="http://localhost/CCFBackup/captive_portal/captiveportal.php">Logout</a>
                     </li>
                   </div>
                 </ul>

@@ -172,6 +172,13 @@
               </div>
             </li>
 
+            <li class="nav-item">
+                <a href="http://localhost/CCFBackup/php_views/final_admin/add_user.php">
+                  <i class="far fa-question-circle"></i>
+                  <p>Support</p>
+                </a>
+            </li>
+
           </ul>
         </div>
       </div>
