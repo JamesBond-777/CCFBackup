@@ -31,13 +31,12 @@
   <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="../../assets/css/plugins.min.css" />
   <link rel="stylesheet" href="../../assets/css/kaiadmin.min.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link rel="stylesheet" href="../../assets/css/demo.css" />
   <link rel="stylesheet" href="../../assets/css/owner/feature_toggle.css" />
-</head>
 
+</head>
 <body>
   <div class="wrapper">
     <!-- Sidebar -->
@@ -63,13 +62,11 @@
         </div>
         <!-- End Logo Header -->
       </div>
-
-
       <div class="sidebar-wrapper scrollbar scrollbar-inner">
         <div class="sidebar-content">
           <ul class="nav nav-secondary">
             <li class="nav-item">
-                <a href="http://localhost/CCFBackup/php_views/final_owner/odashboard.php" >
+              <a href="http://localhost/CCFBackup/php_views/final_admin/adashboard.php">
                 <i class="fas fa-home"></i>
                 <p>Dashboard</p>
               </a>
@@ -79,173 +76,76 @@
                 <i class="fa fa-ellipsis-h"></i>
               </span>
             </li>
+
             <!-- <li class="nav-item">
               <a data-bs-toggle="collapse">
-              <a href="http://localhost/CCFBackup/php_views/final_owner/add_user.php">
+              <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_admin/admin_add_user.php">
                 <i class="fas fa-layer-group"></i>
                 <p>Add User</p>
               </a>
             </li> -->
 
+
+            <!-- <li class="nav-item">
+              <a data-bs-toggle="collapse">
+                <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_admin/afaq_table.php">
+                <i class="fas fa-pen-square"></i>
+                <p>FAQs Page</p>
+
+              </a>
+
             <li class="nav-item">
-              <a href="http://localhost/CCFBackup/php_views/final_owner/ouser_table.php">
+              <a data-bs-toggle="collapse">
+              <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_admin/afaq_add_form.php">
+                <i class="fas fa-table"></i>
+                <p>Add FAQs</p>
+              </a>
+            </li> -->
+
+            <li class="nav-item">
+              <a  href="http://localhost/CCFBackup/php_views/final_admin/afaq_table.php">
+                <i class="far fa-chart-bar"></i>
+                <p>FAQs Management</p>
+                
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_admin/auser_table.php">
+                <i class="far fa-chart-bar"></i>
+                <p>Users Information</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_admin/auser_info_add_and_edit.php">
+                <i class="far fa-chart-bar"></i>
+                <p>Users Add/Edit</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_admin/auser_info_add_and_edit.php">
+                <i class="far fa-chart-bar"></i>
+                <p>Users Add/Edit</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_admin/auser_info_add_and_edit.php">
+                <i class="far fa-chart-bar"></i>
+                <p>Users Add/Edit</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="http://localhost/CCFBackup/php_views/final_admin/auser_table.php">
                 <i class="far fa-chart-bar"></i>
                 <p>User Management</p>
                 
               </a>
-              <div class="collapse" id="charts">
-                <ul class="nav nav-collapse">
-                  <li>
-                    <a href="http://localhost/CCFBackup/php_views/final_owner/ouser_table.php">
-                      <i class="far fa-chart-bar"></i>
-                      <p>Users Information</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://localhost/CCFBackup/php_views/final_owner/add_user.php">
-                      <i class="fas fa-layer-group"></i>
-                      <p>Add User</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://localhost/CCFBackup/php_views/final_owner/user-info-and-edit.php">
-                      <i class="far fa-chart-bar"></i>
-                      <p>Users Add/Edit</p>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="nav-item">
-              <a  href="http://localhost/CCFBackup/php_views/final_owner/ofaq_table.php">
-                <i class="far fa-chart-bar"></i>
-                <p>FAQs Management</p>
-              </a>
-              <!-- <div class="collapse" id="charts">
-                <ul class="nav nav-collapse">
-                  <li>
-                    <a href="http://localhost/CCFBackup/php_views/final_admin/afaq_table.php">
-                      <i class="fas fa-pen-square"></i>
-                      <p>FAQs Page</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://localhost/CCFBackup/php_views/final_admin/afaq_add_form.php">
-                      <i class="fas fa-table"></i>
-                      <p>Add FAQs</p>
-                    </a>
-                  </li>
-                </ul>
-              </div> -->
-            </li>
-
-
-            <li class="nav-item">
               
-              <a href="http://localhost/CCFBackup/php_views/final_owner/ofeaturetoggle.php">
-                <i class="fas fa-table"></i>
-                <p>Feature Toggle</p>
-              </a>
             </li>
-
-            <li class="nav-item">
-              <a href="http://localhost/CCFBackup/php_views/final_owner/owner_restrictions.php">
-                <i class="fas fa-table"></i>
-                <p>Restrictions</p>
-              </a>
-            </li>
-
-            <li class="nav-item">
-                <a href="http://localhost/CCFBackup/php_views/final_owner/oreport.php">
-                <i class="fas fa-pen-square"></i>
-                <p>Reports</p>
-              </a>
-            </li>
-            
-            <li class="nav-item">
-              <a href="http://localhost/CCFBackup/php_views/final_owner/post.php">
-                <i class="far fa-chart-bar"></i>
-                <p>Broadcast</p>
-              </a>
-            </li>
-
-            <!-- <li class="nav-item">
-              <a data-bs-toggle="collapse">
-              <a href="http://localhost/CCFBackup/php_views/final_owner/user-info-and-edit.php">
-                <i class="far fa-chart-bar"></i>
-                <p>Users Add/Edit</p>
-              </a>
-            </li> -->
-
-            <!-- <li class="nav-item">
-              <a href="">
-                <i class="fas fa-desktop"></i>
-                <p>Devices Connected</p>
-                <span class="badge badge-success">4</span>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a href="">
-                <i class="fas fa-file"></i>
-                <p>Any Documentation</p>
-                <span class="badge badge-secondary">1</span>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a data-bs-toggle="collapse" href="#submenu">
-                <i class="fas fa-bars"></i>
-                <p>Extra if needed</p>
-                <span class="caret"></span>
-              </a>
-              <div class="collapse" id="submenu">
-                <ul class="nav nav-collapse">
-                  <li>
-                    <a data-bs-toggle="collapse" href="#subnav1">
-                      <span class="sub-item">Level 1</span>
-                      <span class="caret"></span>
-                    </a>
-                    <div class="collapse" id="subnav1">
-                      <ul class="nav nav-collapse subnav">
-                        <li>
-                          <a href="#">
-                            <span class="sub-item">Level 2</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <span class="sub-item">Level 2</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li>
-                    <a data-bs-toggle="collapse" href="#subnav2">
-                      <span class="sub-item">Level 1</span>
-                      <span class="caret"></span>
-                    </a>
-                    <div class="collapse" id="subnav2">
-                      <ul class="nav nav-collapse subnav">
-                        <li>
-                          <a href="#">
-                            <span class="sub-item">Level 2</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span class="sub-item">Level 1</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li> -->
-
           </ul>
         </div>
       </div>
@@ -278,39 +178,14 @@
         <nav class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom">
           <div class="container-fluid">
             <nav class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex">
-              <!-- Search Bar Suggestion  -->
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <button type="submit" class="btn btn-search pe-1">
-                <i class="fa fa-search search-icon"></i>
-              </button>
-            </div>
-            <!-- Search with a datalist for suggestions -->
-                <input
-                    type="text"
-                    placeholder="Search ..."
-                    class="form-control"
-                    list="quickLinks"
-                    id="quickSearch"
-                />
-                  <datalist id="quickLinks">
-                  <option value="faq edit">
-                  <option value="report">
-                  </datalist>
-          </div>
-
-          <script>
-            document.getElementById('quickSearch').addEventListener('change', function() {
-            const value = this.value.toLowerCase().trim();
-
-            if (value === 'faq edit') {
-              window.location.href = '../final_owner/ofaq_add_form.php';
-            } else if (value === 'report') {
-              window.location.href = '../final_owner/oreport.php';
-            }
-            });
-          </script>
-    <!-- to here -->
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <button type="submit" class="btn btn-search pe-1">
+                    <i class="fa fa-search search-icon"></i>
+                  </button>
+                </div>
+                <input type="text" placeholder="Search ..." class="form-control" />
+              </div>
             </nav>
 
             <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
@@ -569,7 +444,7 @@
       <!-- Start of the Container -->
 
       <div class="container">
-          <body class="page-inner">
+          <div class="page-inner">
 
           <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -603,4 +478,3 @@
       background-color: #0056b3 !important; /* Highlight parent item */
   }
 </style>
-
