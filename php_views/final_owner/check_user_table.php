@@ -21,31 +21,31 @@ include('../asset_for_pages/owner_header.php');
 ?>
                 <div class="page-inner">
                 <div class="page-header">
-                   <h3 class="fw-bold mb-3">User Table</h3>
-                   <ul class="breadcrumbs mb-3">
-                     <li class="nav-home">
-                       <a href="#">
-                         <i class="icon-home"></i>
-                       </a>
-                     </li>
-                     <li class="separator">
-                       <i class="icon-arrow-right"></i>
-                     </li>
-                     <li class="nav-item">
-                       <a href="#">Tables</a>
-                     </li>
-                     <li class="separator">
-                       <i class="icon-arrow-right"></i>
-                     </li>
-                   </ul>
-                </div>
+    <h3 class="fw-bold mb-3">User Table</h3>
+    <ul class="breadcrumbs mb-3">
+      <li class="nav-home">
+        <a href="#">
+          <i class="icon-home"></i>
+        </a>
+      </li>
+      <li class="separator">
+        <i class="icon-arrow-right"></i>
+      </li>
+      <li class="nav-item">
+        <a href="#">Tables</a>
+      </li>
+      <li class="separator">
+        <i class="icon-arrow-right"></i>
+      </li>
+    </ul>
+  </div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header">
                                     <div class="d-flex align-items-center">
                                         <h4 class="card-title">User Table</h4>
-                                        <button onclick="window.location.href='add_user.php'" class="btn btn-primary btn-round ms-auto" data-bs-toggle="modal" data-bs-target="#addRowModal">
+                                        <button class="btn btn-primary btn-round ms-auto" data-bs-toggle="modal" data-bs-target="#addRowModal">
                                             <i class="fa fa-plus"></i>
                                             Add User
                                         </button>

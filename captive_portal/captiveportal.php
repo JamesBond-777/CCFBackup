@@ -38,7 +38,7 @@
                             </div>
                             <div class="form-group">
                                 <input id="password-field" type="password" class="form-control" required>
-                                <label class="form-control-placeholder" for="password">Access Code</label>
+                                <label class="form-control-placeholder" for="password">Password</label>
                                 <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                             </div>
                             <div class="form-group">

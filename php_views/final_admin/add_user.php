@@ -74,7 +74,7 @@ include('../asset_for_pages/admin_header.php');
                         </div>
                     </div>
                     
-                    <div class="form-group row">
+                    <!-- <div class="form-group row">
                         <label for="accessCode" class="col-sm-2 col-form-label">Access Code:</label>
                         <div class="col-sm-3">
                             <input type="text" class="form-control" id="accessCode" name="accessCode" readonly>
@@ -82,7 +82,7 @@ include('../asset_for_pages/admin_header.php');
                         <div class="col-sm-1">
                             <button type="button" class="btn btn-secondary" onclick="generateAccessCode()">Generate</button>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="form-group row">
                         <label for="bandwidthCap" class="col-sm-2 col-form-label">Bandwidth Cap (User Level):</label>

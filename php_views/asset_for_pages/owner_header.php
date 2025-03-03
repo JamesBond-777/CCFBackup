@@ -69,7 +69,6 @@
         <div class="sidebar-content">
           <ul class="nav nav-secondary">
             <li class="nav-item">
-              <a data-bs-toggle="collapse"  class="collapsed" aria-expanded="false">
                 <a href="http://localhost/CCFBackup/php_views/final_owner/odashboard.php" >
                 <i class="fas fa-home"></i>
                 <p>Dashboard</p>
@@ -89,12 +88,12 @@
             </li> -->
 
             <li class="nav-item">
-              <a data-bs-toggle="collapse" href="#usermanagement">
+              <a href="http://localhost/CCFBackup/php_views/final_owner/ouser_table.php">
                 <i class="far fa-chart-bar"></i>
                 <p>User Management</p>
-                <span class="caret"></span>
+                
               </a>
-              <div class="collapse" id="usermanagement">
+              <div class="collapse" id="charts">
                 <ul class="nav nav-collapse">
                   <li>
                     <a href="http://localhost/CCFBackup/php_views/final_owner/ouser_table.php">
@@ -122,7 +121,6 @@
               <a  href="http://localhost/CCFBackup/php_views/final_owner/ofaq_table.php">
                 <i class="far fa-chart-bar"></i>
                 <p>FAQs Management</p>
-                <span class="caret"></span>
               </a>
               <!-- <div class="collapse" id="charts">
                 <ul class="nav nav-collapse">
@@ -143,16 +141,15 @@
             </li>
 
 
-            <li class="nav-item  active submenu">
-              <a data-bs-toggle="collapse">
+            <li class="nav-item">
+              
               <a href="http://localhost/CCFBackup/php_views/final_owner/ofeaturetoggle.php">
                 <i class="fas fa-table"></i>
                 <p>Feature Toggle</p>
               </a>
             </li>
 
-            <li class="nav-item  active submenu">
-              <a data-bs-toggle="collapse">
+            <li class="nav-item">
               <a href="http://localhost/CCFBackup/php_views/final_owner/owner_restrictions.php">
                 <i class="fas fa-table"></i>
                 <p>Restrictions</p>
@@ -160,7 +157,6 @@
             </li>
 
             <li class="nav-item">
-              <a data-bs-toggle="collapse">
                 <a href="http://localhost/CCFBackup/php_views/final_owner/oreport.php">
                 <i class="fas fa-pen-square"></i>
                 <p>Reports</p>
@@ -168,7 +164,6 @@
             </li>
             
             <li class="nav-item">
-              <a data-bs-toggle="collapse">
               <a href="http://localhost/CCFBackup/php_views/final_owner/post.php">
                 <i class="far fa-chart-bar"></i>
                 <p>Broadcast</p>
@@ -574,4 +569,38 @@
       <!-- Start of the Container -->
 
       <div class="container">
-          <div class="page-inner">
+          <body class="page-inner">
+
+          <script>
+  document.addEventListener("DOMContentLoaded", function () {
+      let currentUrl = window.location.href; // Get the full current URL
+
+      // Select all navigation links inside the sidebar
+      let navLinks = document.querySelectorAll(".sidebar .nav-item a");
+
+      navLinks.forEach(link => {
+          if (currentUrl.includes(link.href)) { 
+              link.classList.add("active"); // Add active class
+              link.parentElement.classList.add("active"); // Optional: highlight parent li
+          } else {
+              link.classList.remove("active"); // Remove from others
+              link.parentElement.classList.remove("active");
+          }
+      });
+  });
+</script>
+
+<style>
+  /* Active link styling */
+  .nav-item a.active {
+      font-weight: bold;
+      color: #fff !important; /* White text */
+      background-color: #007bff; /* Bootstrap primary color */
+      border-left: 5px solid #0056b3; /* Left highlight */
+  }
+
+  .nav-item.active {
+      background-color: #0056b3 !important; /* Highlight parent item */
+  }
+</style>
+

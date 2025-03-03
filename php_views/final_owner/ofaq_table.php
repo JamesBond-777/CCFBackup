@@ -84,10 +84,7 @@ $faqData = [
   </div>
 </div>
 
-<?php
-// Include the footer
-include('../asset_for_pages/footer.php');
-?>
+
 
 <script>
 // Function to remove a row from the table with confirmation
@@ -108,3 +105,9 @@ function removeRow(button) {
 // }
 // 
 </script>
+
+
+<?php
+// Include the footer
+include('../asset_for_pages/footer.php');
+?>

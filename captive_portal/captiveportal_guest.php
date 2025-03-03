@@ -21,7 +21,6 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-6 text-center mb-5">
-					<!-- <h2 class="heading-section"></h2> -->
 				</div>
 			</div>
 			<div class="row justify-content-center">
@@ -34,32 +33,33 @@
 		      			<h3 class="mb-4">Sign In</h3>
 		      		</div>
 		      	</div>
-							<form action="http://localhost/CCFBackup/php_views/guest_user/homepage.php" method="GET" class="signin-form">
-		      		<div class="form-group mt-3">
-		      			<input type="text" name="username" class="form-control" required>
-		      			<label class="form-control-placeholder" for="username">Username</label>
-		      		</div>
-		            <!-- <div class="form-group">
-		              <input id="password-field" name="access_code" type="password" class="form-control" required>
-		              <label class="form-control-placeholder" for="password">Access Code</label>
-		              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-		            </div> -->
+							<form class="signin-form">
+								<div class="form-group mt-3">
+									<h4><strong>Terms and Conditions</strong></h4>
+									<div id="terms-box" class="terms-box" style="border: 1px solid #ccc; padding: 10px; height: 150px; overflow-y: scroll; background: #f8f9fa; font-size: 14px;">
+										<p>
+											1. You agree to use this service responsibly and abide by all applicable laws.<br>
+											2. The guest access is provided as-is with no guarantees of uptime or speed.<br>
+											3. Any misuse, including illegal activities, will result in immediate termination of access.<br>
+											4. We are not responsible for any data loss or security issues while using this network.<br>
+											5. By proceeding, you acknowledge and accept these terms.
+										</p>
+									</div>
+									<div class="form-group mt-2">
+										<input type="checkbox" id="agree-checkbox">
+										<label for="agree-checkbox"> Agree to Terms and Conditions</label>
+									</div>
+								</div>
 
-		            <!-- <div class="form-group">
-							<button type="submit" class="form-control btn btn-primary rounded submit px-3">
-								Continue
-							</button>
-		            </div> -->
-
-					<!-- Guest Login Button -->
-					<div class="form-group">
-							<button type="submit" class="form-control btn btn-primary rounded submit px-3">
-								Login as Guest
-							</button>
-		            </div>
-			          </form>
-			        </div>
-			      </div>
+								<!-- Guest Login Button -->
+								<div class="form-group">
+									<button type="button" id="guest-login-btn" class="form-control btn btn-primary rounded submit px-3" disabled onclick="navigateToGuestPage()">
+										Login as Guest
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -69,7 +69,15 @@
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/login.js"></script>
+  <script>
+    document.getElementById('agree-checkbox').addEventListener('change', function() {
+        document.getElementById('guest-login-btn').disabled = !this.checked;
+    });
+
+    function navigateToGuestPage() {
+        window.location.href = 'http://localhost/CCFBackup/php_views/guest_user/guest_homepage.php';
+    }
+  </script>
 
 	</body>
 </html>

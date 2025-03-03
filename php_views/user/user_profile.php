@@ -72,12 +72,12 @@ $devices = [
 
                    
 
-                    <!-- Access Code Field -->
+                    <!-- Password Field -->
 
                     <div class="form-group row">
-                        <label for="accessCode" class="col-sm-2 col-form-label">Access Code:</label>
-                        <div class="col-sm-4">
-                            <input type="text" class="form-control" id="accessCode" name="accessCode" value="5YRWC0XKON" readonly>
+                        <label for="password" class="col-sm-2 col-form-label">Password:</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="password" name="password" readonly required>
                         </div>
                     </div>
 
@@ -166,6 +166,15 @@ function generateAccessCode() {
     document.getElementById("accessCode").value = code;
 }
 
+function generatePassword() {
+    var words = ["Horse", "Battery", "Staple", "Cloud", "Secure", "Bridge", "River", "Table", "Laptop", "Coffee"];
+    var password = words[Math.floor(Math.random() * words.length)] + 
+                   words[Math.floor(Math.random() * words.length)] + 
+                   words[Math.floor(Math.random() * words.length)] + 
+                   Math.floor(Math.random() * 100);
+    document.getElementById("password").value = password;
+}
+
 // JavaScript function to remove a device with confirmation
 function removeDevice(button) {
     const confirmation = confirm("Do you really want to remove this device?");
@@ -175,3 +184,40 @@ function removeDevice(button) {
     }
 }
 </script>
+
+<script>
+// Form validation and submission
+$(document).ready(function () {
+    $("#delete").on("submit", function (event) {
+        event.preventDefault();
+        
+        showNotification("Device deleted successfully!", "success");
+        $("#delete")[0].reset();
+    });
+});
+
+// Function to show notification
+function showNotification(message, type) {
+    $.notify({
+        title: "Notification",
+        message: message,
+        icon: "fa fa-bell"
+    }, {
+        type: type,
+        placement: {
+            from: "top",
+            align: "center"
+        },
+        animate: {
+            enter: "animated fadeInDown",
+            exit: "animated fadeOutUp"
+        },
+        delay: 4000
+    });
+}
+</script>
+
+<script src="../assets/js/core/jquery-3.7.1.min.js"></script>
+<script src="../assets/js/core/popper.min.js"></script>
+<script src="../assets/js/core/bootstrap.min.js"></script>
+<script src="../assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>

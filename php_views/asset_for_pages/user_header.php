@@ -66,7 +66,7 @@
         <div class="sidebar-content">
           <ul class="nav nav-secondary">
             <li class="nav-item">
-              <a data-bs-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
+              <a data-bs-toggle="collapse" href="http://localhost/CCFBackup/php_views/user/user_profile.php" class="collapsed" aria-expanded="false">
                 <i class="fas fa-home"></i>
                 <p>Home Page</p>
               </a>
@@ -76,6 +76,7 @@
                 <i class="fa fa-ellipsis-h"></i>
               </span>
             </li>
+            
             <li class="nav-item">
               <a data-bs-toggle="collapse">
               <a href="http://localhost/CCFBackup/php_views/user/user_profile.php">

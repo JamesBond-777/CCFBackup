@@ -74,15 +74,6 @@ include('../asset_for_pages/owner_header.php');
                         </div>
                     </div>
                     
-                    <div class="form-group row">
-                        <label for="accessCode" class="col-sm-2 col-form-label">Access Code:</label>
-                        <div class="col-sm-3">
-                            <input type="text" class="form-control" id="accessCode" name="accessCode" readonly>
-                        </div>
-                        <div class="col-sm-1">
-                            <button type="button" class="btn btn-secondary" onclick="generateAccessCode()">Generate</button>
-                        </div>
-                    </div>
                     
                     <div class="form-group row">
                         <label for="role" class="col-sm-2 col-form-label">Role:</label>

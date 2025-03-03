@@ -86,7 +86,7 @@ $devices = [
                     </div>
 
                     <!-- Access Code Field -->
-                    <div class="form-group row">
+                    <!-- <div class="form-group row">
                         <label for="accessCode" class="col-sm-2 col-form-label">Access Code:</label>
                         <div class="col-sm-3">
                             <input type="text" class="form-control" id="accessCode" name="accessCode" value="<?php echo $randomAccessCode; ?>" readonly>
@@ -94,7 +94,7 @@ $devices = [
                         <div class="col-sm-1">
                             <button type="button" class="btn btn-secondary" onclick="generateAccessCode()">Generate</button>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Bandwidth Select -->
                     <div class="form-group row">
