@@ -1,6 +1,6 @@
 <?php
 // Set the page title dynamically
-$pageTitle = "O - Dashboard"; 
+$pageTitle = "Support Page"; 
 
 // Include the header
 include('../asset_for_pages/user_header.php');
