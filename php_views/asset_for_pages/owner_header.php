@@ -66,7 +66,7 @@
         <div class="sidebar-content">
           <ul class="nav nav-secondary">
             <li class="nav-item">
-              <a href="http://localhost/CCFBackup/php_views/final_admin/adashboard.php">
+              <a href="http://localhost/CCFBackup/php_views/final_owner/odashboard.php">
                 <i class="fas fa-home"></i>
                 <p>Dashboard</p>
               </a>
@@ -103,49 +103,54 @@
             </li> -->
 
             <li class="nav-item">
-              <a  href="http://localhost/CCFBackup/php_views/final_admin/afaq_table.php">
+              <a href="http://localhost/CCFBackup/php_views/final_owner/ouser_table.php">
                 <i class="far fa-chart-bar"></i>
+                <p>User Management</p>  
+              </a>
+            </li>
+
+
+            <li class="nav-item">
+              <a  href="http://localhost/CCFBackup/php_views/final_owner/ofaq_table.php">
+                <i class="fas fa-layer-group"></i>
                 <p>FAQs Management</p>
-                
               </a>
             </li>
 
+            
+
             <li class="nav-item">
-              <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_admin/auser_table.php">
-                <i class="far fa-chart-bar"></i>
-                <p>Users Information</p>
+              <a href="http://localhost/CCFBackup/php_views/final_owner/ofeaturetoggle.php">
+                <i class="fas fa-table"></i>
+                <p>Feature Toggle</p>
               </a>
             </li>
 
+
             <li class="nav-item">
-              <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_admin/auser_info_add_and_edit.php">
+              <a href="http://localhost/CCFBackup/php_views/final_owner/owner_restrictions.php">
                 <i class="far fa-chart-bar"></i>
-                <p>Users Add/Edit</p>
+                <p>Restrictions</p>
               </a>
             </li>
 
+
             <li class="nav-item">
-              <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_admin/auser_info_add_and_edit.php">
-                <i class="far fa-chart-bar"></i>
-                <p>Users Add/Edit</p>
+              <a href="http://localhost/CCFBackup/php_views/final_owner/oreport.php">
+                <i class="fas fa-table"></i>
+                <p>Reports</p>
               </a>
             </li>
 
+            
             <li class="nav-item">
-              <a href="http://localhost/CyberCafe-Fleming-prototype/php_views/final_admin/auser_info_add_and_edit.php">
-                <i class="far fa-chart-bar"></i>
-                <p>Users Add/Edit</p>
+              <a href="http://localhost/CCFBackup/php_views/final_owner/post.php">
+                <i class="fas fa-pen-square"></i>
+                <p>Broadcast</p>
               </a>
             </li>
 
-            <li class="nav-item">
-              <a href="http://localhost/CCFBackup/php_views/final_admin/auser_table.php">
-                <i class="far fa-chart-bar"></i>
-                <p>User Management</p>
-                
-              </a>
-              
-            </li>
+            
           </ul>
         </div>
       </div>
@@ -405,7 +410,7 @@
                   </div>
                   <span class="profile-username">
                     <span class="op-7">Hi,</span>
-                    <span class="fw-bold">Sudeep</span>
+                    <span class="fw-bold">Louis</span>
                   </span>
                 </a>
                 <ul class="dropdown-menu dropdown-user animated fadeIn">
@@ -416,8 +421,8 @@
                           <img src="../../assets/img/profile.jpg" alt="image profile" class="avatar-img rounded" />
                         </div>
                         <div class="u-text">
-                          <h4>Sudeep</h4>
-                          <p class="text-muted">sudeep@yahoo.com</p>
+                          <h4>Louis</h4>
+                          <p class="text-muted">Louis@yahoo.com</p>
                           <a href="profile.html" class="btn btn-xs btn-secondary btn-sm">View Profile</a>
                         </div>
                       </div>
@@ -430,7 +435,7 @@
                       <div class="dropdown-divider"></div>
                       <a class="dropdown-item" href="#">Account Setting</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="../captive_portal/geda.html">Logout</a>
+                      <a class="dropdown-item" href="http://localhost/CCFBackup/captive_portal/captiveportal.php">Logout</a>
                     </li>
                   </div>
                 </ul>

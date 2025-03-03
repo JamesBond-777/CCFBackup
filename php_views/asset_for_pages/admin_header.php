@@ -431,7 +431,7 @@
                   </div>
                   <span class="profile-username">
                     <span class="op-7">Hi,</span>
-                    <span class="fw-bold">Sudeep</span>
+                    <span class="fw-bold">Chinmay</span>
                   </span>
                 </a>
                 <ul class="dropdown-menu dropdown-user animated fadeIn">
@@ -442,8 +442,8 @@
                           <img src="../../assets/img/profile.jpg" alt="image profile" class="avatar-img rounded" />
                         </div>
                         <div class="u-text">
-                          <h4>Sudeep</h4>
-                          <p class="text-muted">sudeep@yahoo.com</p>
+                          <h4>Chinmay</h4>
+                          <p class="text-muted">Chinmay@yahoo.com</p>
                           <a href="profile.html" class="btn btn-xs btn-secondary btn-sm">View Profile</a>
                         </div>
                       </div>
@@ -456,7 +456,7 @@
                       <div class="dropdown-divider"></div>
                       <a class="dropdown-item" href="#">Account Setting</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="../captive_portal/geda.html">Logout</a>
+                      <a class="dropdown-item" href="http://localhost/CCFBackup/captive_portal/captiveportal.php">Logout</a>
                     </li>
                   </div>
                 </ul>
