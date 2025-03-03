@@ -9,11 +9,7 @@ include('../asset_for_pages/owner_header.php');
 $dataSharingPercentage = 50; // This can be dynamically fetched from the database
 
 // Simulate user list data for speed lanes (you could dynamically fetch this from the database)
-$users = [
-    ['username' => 'Admin', 'currentSpeedLane' => 'High'],
-    ['username' => 'Regular User', 'currentSpeedLane' => 'Mid'],
-    ['username' => 'Guest User', 'currentSpeedLane' => 'Mid'],
-];
+
 ?>
 
 <!-- Start of the Container -->
@@ -79,7 +75,7 @@ $users = [
       <div class="col-md-12">
   <div class="card">
     <div class="card-header d-flex justify-content-between align-items-center">
-      <div class="card-title">URL Restrictions</div>
+      <div class="card-title">URL Allowed/Block</div>
       <span class="info-icon" data-toggle="tooltip" title="Toggle this switch to enable or disable URL-based restrictions, allowing control over user access to specific websites or online content.">
         <i class="fas fa-info-circle"></i>
       </span>
@@ -93,7 +89,6 @@ $users = [
   </div>
 </div>
 
-
       <!-- New Card for Guest Access -->
       <div class="col-md-12">
           <div class="card">
@@ -105,6 +100,23 @@ $users = [
             </div>
           <div class="card-body">
             <p>This toggle helps you to allow the guest user to access the internet or not.</p>
+              <div class="form-check form-switch" style="--bs-form-switch-width:60px;--bs-form-switch-height:24px">
+                <input class="form-check-input" type="checkbox" role="switch" id="switch"/>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+          <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="card-title">Speed Lane</div>
+              <span class="info-icon" data-toggle="tooltip" title="Toggle this switch to allow or restrict guest users from accessing the internet, managing their connectivity as needed.">
+                <i class="fas fa-info-circle"></i>
+              </span>
+            </div>
+          <div class="card-body">
+            <p>This toggle helps you assign the speed lane aka Data transfer rate to each users.</p>
               <div class="form-check form-switch" style="--bs-form-switch-width:60px;--bs-form-switch-height:24px">
                 <input class="form-check-input" type="checkbox" role="switch" id="switch"/>
               </div>
@@ -146,45 +158,7 @@ $users = [
         </div>
       </div>
 
-      <!-- New Card for Speed Lane -->
-      <div class="col-md-12">
-        <div class="card">
-          <div class="card-header d-flex justify-content-between align-items-center">
-            <div class="card-title">Speed Lane</div>
-              <span class="info-icon" data-toggle="tooltip" title="Use the dropdown to assign different bandwidth tiers (Low, Mid, High) to users, allowing you to control their internet speed based on their needs.">
-                <i class="fas fa-info-circle"></i>
-              </span>
-            </div>
-          <div class="card-body">
-            <p>The Speed Lane feature allows you to assign different bandwidth tiers (Low, Mid, High) to each user. You can control the speed for each user using the dropdown below.</p>
-
-            <!-- Users and Speed Lane Dropdown -->
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>User</th>
-                  <th>Speed Lane</th>
-                </tr>
-              </thead>
-              <tbody>
-                <?php foreach ($users as $user) : ?>
-                  <tr>
-                    <td><?php echo $user['username']; ?></td>
-                    <td>
-                      <select class="form-control">
-                        <option <?php echo $user['currentSpeedLane'] == 'Low' ? 'selected' : ''; ?>>Low</option>
-                        <option <?php echo $user['currentSpeedLane'] == 'Mid' ? 'selected' : ''; ?>>Mid</option>
-                        <option <?php echo $user['currentSpeedLane'] == 'High' ? 'selected' : ''; ?>>High</option>
-                      </select>
-                    </td>
-                  </tr>
-                <?php endforeach; ?>
-              </tbody>
-            </table>
-            
-          </div>
-        </div>
-      </div>
+      
 
     </div>
 <?php
