@@ -16,7 +16,7 @@ $queries = [
 
 <div class="page-inner mt-4">
     <div class="container">
-        <h2 class="mb-4">CyberCafe Support (Admin)</h2>
+        <h2 class="mb-4">CyberCafe Support (Owner)</h2>
 
         <!-- Search Bar -->
         <div class="input-group mb-3">

@@ -100,7 +100,7 @@
             </li>
 
             <li class="nav-item">
-                <a href="http://localhost/CCFBackup/php_views/user/instructionspage.php">
+                <a href="http://localhost/CCFBackup/php_views/user/user_support.php">
                   <i class="far fa-question-circle"></i>
                   <p>Support</p>
                 </a>

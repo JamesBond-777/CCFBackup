@@ -1,9 +1,9 @@
 <?php
 // Set the page title dynamically
-$pageTitle = "O - Dashboard"; 
+$pageTitle = "A - Dashboard"; 
 
 // Include the header
-include('../asset_for_pages/owner_header.php');
+include('../asset_for_pages/admin_header.php');
 ?>
 
 <div class="page-inner mt-4">
