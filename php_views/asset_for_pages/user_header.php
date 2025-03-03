@@ -77,14 +77,6 @@
               </span>
             </li>
 
-
-            <li class="nav-item">
-                <a href="http://localhost/CCFBackup/php_views/user/post.php">
-                <i class="fas fa-pen-square"></i>
-                <p>Blog Post</p>
-
-              </a>
-
             <li class="nav-item">
               <a href="http://localhost/CCFBackup/php_views/user/faqpage.php">
                 <i class="fas fa-table"></i>
