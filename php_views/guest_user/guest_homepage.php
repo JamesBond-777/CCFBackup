@@ -56,19 +56,16 @@ include('../asset_for_pages/guest_header.php');
               <table class="table table-striped">
                 <thead>
                   <tr>
-                    <th>SN</th>
                     <th>Item List</th>
                     <th>Visit</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>1</td>
                     <td>https://example.com</td>
                     <td><button class="btn btn-info btn-sm" onclick="removeRow(this)">Visit</button></td>
                   </tr>
                   <tr>
-                    <td>2</td>
                     <td>https://anotherurl.com</td>
                     <td><button class="btn btn-info btn-sm" onclick="removeRow(this)">Visit</button></td>
                   </tr>

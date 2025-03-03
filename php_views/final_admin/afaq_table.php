@@ -7,8 +7,8 @@ include('../asset_for_pages/admin_header.php');
 
 // Sample data for the FAQ (in a real application, this data would come from a database)
 $faqData = [
-    ['id' => 1, 'question' => 'What is the return policy?', 'answer' => 'Our return policy allows returns within 30 days of purchase.'],
-    ['id' => 2, 'question' => 'How can I reset my password?', 'answer' => 'You can reset your password by clicking on the "Forgot Password" link.']
+    [ 'question' => 'What is the return policy?', 'answer' => 'Our return policy allows returns within 30 days of purchase.'],
+    [ 'question' => 'How can I reset my password?', 'answer' => 'You can reset your password by clicking on the "Forgot Password" link.']
 ];
 ?>
 
@@ -51,7 +51,6 @@ $faqData = [
           <table class="table table-striped" id="qaTable">
             <thead>
               <tr>
-                <th>SN</th>
                 <th>Question</th>
                 <th>Answer</th>
                 <th>Actions</th>
@@ -60,7 +59,6 @@ $faqData = [
             <tbody>
               <?php foreach ($faqData as $faq) : ?>
                 <tr>
-                  <td><?php echo $faq['id']; ?></td>
                   <td><?php echo $faq['question']; ?></td>
                   <td><?php echo $faq['answer']; ?></td>
                   <style>

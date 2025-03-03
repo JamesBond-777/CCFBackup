@@ -173,7 +173,7 @@
             </li>
 
             <li class="nav-item">
-                <a href="http://localhost/CCFBackup/php_views/final_admin/add_user.php">
+                <a href="http://localhost/CCFBackup/php_views/final_admin/support.php">
                   <i class="far fa-question-circle"></i>
                   <p>Support</p>
                 </a>
@@ -479,7 +479,7 @@
       <div class="container">
           <div class="page-inner">
 
-          <script>
+<script>
   document.addEventListener("DOMContentLoaded", function () {
       let currentUrl = window.location.href; // Get the full current URL
 
